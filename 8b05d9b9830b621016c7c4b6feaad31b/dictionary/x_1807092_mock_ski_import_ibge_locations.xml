@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2576e9b1838b621016c7c4b6feaad36b" extends="sys_import_set_row" label="Import IBGE Locations" max_length="40" name="x_1807092_mock_ski_import_ibge_locations" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=UF" label="UF" max_length="40" name="u_uf" type="string"/>
+        <element attributes="import_attribute_name=IBGE7" label="IBGE7" max_length="40" name="u_ibge7" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Porte" label="Porte" max_length="40" name="u_porte" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Região" label="Região" max_length="40" name="u_rplcd_n_ascii_423909841" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=J" label="J" max_length="97" name="u_j" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=População 2010" label="População 2010" max_length="40" name="u_rplcd_n_ascii_241568207" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Município" label="Município" max_length="40" name="u_rplcd_n_ascii_1936966730" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Capital" label="Capital" max_length="40" name="u_capital" type="string"/>
+        <element attributes="import_attribute_name=IBGE" label="IBGE" max_length="40" name="u_ibge" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ConcatUF+Mun" label="ConcatUF+Mun" max_length="40" name="u_concatuf_mun" type="string"/>
+    </element>
+</database>

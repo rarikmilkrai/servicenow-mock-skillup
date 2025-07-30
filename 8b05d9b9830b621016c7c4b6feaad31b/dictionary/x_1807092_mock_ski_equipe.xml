@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="326e1d35834b621016c7c4b6feaad391" extends="sys_user" label="Equipe" max_length="40" name="x_1807092_mock_ski_equipe" type="collection">
+        <element choice="1" label="Cargo" max_length="40" name="cargo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" sequence="1" value="-- New choice --"/>
+                <element inactive_on_update="false" label="Monitor" sequence="2" value="monitor"/>
+                <element inactive_on_update="false" label="Estagiário" sequence="3" value="estagiario"/>
+                <element inactive_on_update="false" label="Gestor" sequence="4" value="gestor"/>
+            </choice>
+        </element>
+        <element label="Data de Desligamento" max_length="40" name="data_de_desligamento" type="glide_date"/>
+        <element label="Data de Admissão" max_length="40" name="data_de_admissao" type="glide_date"/>
+        <element label="CPF" max_length="14" name="cpf" type="string"/>
+        <element label="Salário" max_length="20" name="salario" type="currency"/>
+    </element>
+</database>

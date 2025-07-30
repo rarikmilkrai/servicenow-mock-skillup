@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1807092_mock_ski_equipe">cargo=estagiario^EQ<item display_value="Estagiário" endquery="false" field="cargo" goto="false" newquery="false" operator="=" or="false" value="estagiario"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+   // O 'false' torna a lista de progresso oculta.
+   g_form.setRelatedListVisible('x_1807092_mock_ski_progresso_m2m.u_estagiario', false);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+   // O 'true' torna a lista de progresso visível.
+   g_form.setRelatedListVisible('x_1807092_mock_ski_progresso_m2m.u_estagiario', true);
+}]]></script_true>
+        <set_values/>
+        <short_description>Ocultar lista de cursos para gerente e monitor</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-30 20:37:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ea5aca75834f621016c7c4b6feaad38e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Ocultar lista de cursos para gerente e monitor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_ui_policy_ea5aca75834f621016c7c4b6feaad38e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-30 21:01:40</sys_updated_on>
+        <table>x_1807092_mock_ski_equipe</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>
