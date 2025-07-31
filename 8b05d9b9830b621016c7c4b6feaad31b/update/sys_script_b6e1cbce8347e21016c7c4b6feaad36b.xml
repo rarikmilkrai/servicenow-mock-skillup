@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1807092_mock_ski_equipe</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Adiciona Membro da Equipe ao Grupo por C</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // --- CONFIGURAÇÃO ---
+    // Cole os sys_ids dos seus grupos aqui
+    var grupoEstagiarios = '5af2b60e8307e21016c7c4b6feaad372';
+    var grupoMonitores = '9f9376ca8307e21016c7c4b6feaad341';
+    var grupoGerentes = '5af2b60e8307e21016c7c4b6feaad372';
+    // --------------------
+
+    var cargo = current.u_cargo.getValue(); // Pega o valor do campo 'Cargo'
+    var grupoParaAdicionar = '';
+
+    // Decide qual grupo usar com base no valor do cargo
+    if (cargo == 'estagiario') {
+        grupoParaAdicionar = grupoEstagiarios;
+    } else if (cargo == 'monitor') {
+        grupoParaAdicionar = grupoMonitores;
+    } else if (cargo == 'gestor') {
+        grupoParaAdicionar = grupoGerentes;
+    }
+
+    // Se um grupo correspondente foi encontrado, cria a associação
+    if (grupoParaAdicionar != '') {
+        var grMember = new GlideRecord('sys_user_grmember');
+        grMember.initialize();
+        grMember.setValue('user', current.sys_id);
+        grMember.setValue('group', grupoParaAdicionar);
+        grMember.insert();
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 19:16:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b6e1cbce8347e21016c7c4b6feaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Adiciona Membro da Equipe ao Grupo por C</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_script_b6e1cbce8347e21016c7c4b6feaad36b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 19:16:53</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b6e1cbce8347e21016c7c4b6feaad36b"/>
+</record_update>
