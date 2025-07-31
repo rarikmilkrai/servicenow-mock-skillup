@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4522060e8303e21016c7c4b6feaad334" label="Possui Skill" max_length="40" name="x_1807092_mock_ski_possui_skill" type="collection">
+        <element label="Skill" max_length="32" name="skill" reference="x_1807092_mock_ski_skill" type="reference"/>
+        <element choice="1" label="Nivel" max_length="40" name="nivel" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Intermediate" sequence="2" value="intermediate"/>
+                <element inactive_on_update="false" label="Basic" sequence="1" value="basic"/>
+                <element inactive_on_update="false" label="Advanced" sequence="3" value="advanced"/>
+            </choice>
+        </element>
+        <element label="Funcionarios" max_length="32" name="funcionarios" reference="x_1807092_mock_ski_equipe" type="reference"/>
+        <index name="index">
+            <element name="funcionarios"/>
+        </index>
+        <index name="index2">
+            <element name="skill"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d6533dc683cfa21016c7c4b6feaad367" extends="task" label="Tarefa do Projeto" max_length="40" name="x_1807092_mock_ski_tarefa_do_projeto" type="collection">
+        <element label="Projeto" max_length="32" name="projeto" reference="x_1807092_mock_ski_projeto" type="reference"/>
+        <element label="Hora Estimada" max_length="40" name="hora_estimada" type="glide_duration"/>
+        <element label="Data de inicio" max_length="40" name="data_de_inicio" type="glide_date"/>
+        <element label="Hora Trabalhada" max_length="40" name="hora_trabalhada" type="glide_duration"/>
+        <element label="Data de finalização" max_length="40" name="data_de_finalizacao" type="glide_date"/>
+        <element label="Dependências" max_length="40" name="dependencias" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Aberto" sequence="2" value="aberto"/>
+                <element inactive_on_update="false" label="Em andamento" sequence="1" value="em_andamento"/>
+                <element inactive_on_update="false" label="Cancelado" sequence="3" value="cancelado"/>
+                <element inactive_on_update="false" label="Concluído" sequence="4" value="concluido"/>
+            </choice>
+        </element>
+        <element label="Nome da Tarefa" max_length="40" name="nome_da_tarefa" type="string"/>
+        <element label="Descrição" max_length="100" name="descricao" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1807092_mock_ski_equipe">cargo=estagiario^EQ<item display_value="Estagiário" endquery="false" field="cargo" goto="false" newquery="false" operator="=" or="false" value="estagiario"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+    // Oculta as duas listas
+    g_form.setRelatedListVisible('u_alocados.u_equipe', false);
+    g_form.setRelatedListVisible('task.assigned_to', false);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    // Mostra as duas listas
+    g_form.setRelatedListVisible('u_alocados.u_equipe', true); // Nome provável da relação de Alocados
+    g_form.setRelatedListVisible('task.assigned_to', true);   // Nome padrão da relação de Tarefas Atribuídas
+}]]></script_true>
+        <set_values/>
+        <short_description>Mostra listas de Projeto/Tarefa para Estagiários</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 14:28:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16200e4a8303e21016c7c4b6feaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mostra listas de Projeto/Tarefa para Estagiários</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_ui_policy_16200e4a8303e21016c7c4b6feaad323</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 14:28:00</sys_updated_on>
+        <table>x_1807092_mock_ski_equipe</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

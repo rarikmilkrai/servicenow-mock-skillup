@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="90b9e5ca838fa21016c7c4b6feaad3ab" extends="task" label="Projeto" max_length="40" name="x_1807092_mock_ski_projeto" type="collection">
+        <element label="Gerente" max_length="32" name="gerente" reference="x_1807092_mock_ski_equipe" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Em andamento" sequence="2" value="em_andamento"/>
+                <element inactive_on_update="false" label="Cancelado" sequence="4" value="cancelado"/>
+                <element inactive_on_update="false" label="Aberto" sequence="1" value="aberto"/>
+                <element inactive_on_update="false" label="Concluido" sequence="3" value="concluido"/>
+            </choice>
+        </element>
+        <element label="Orçamento Estimado" max_length="20" name="orcamento_estimado" type="currency"/>
+        <element label="Nome do Projeto" max_length="80" name="nome_do_projeto" type="string"/>
+        <element label="Motivo do Cancelamento" max_length="100" name="motivo_do_cancelamento" type="string"/>
+        <element display="true" label="Orçamento Real" max_length="20" name="orcamento_real" type="currency"/>
+        <element label="Diferença de Orçamento" max_length="20" name="diferenca_de_orcamento" read_only="true" type="currency"/>
+    </element>
+</database>

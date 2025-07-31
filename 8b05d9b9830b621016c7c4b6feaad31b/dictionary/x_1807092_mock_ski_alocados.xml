@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0456750e83cfa21016c7c4b6feaad3fb" label="Alocados" max_length="40" name="x_1807092_mock_ski_alocados" type="collection">
+        <element label="Equipe" max_length="32" name="equipe" reference="x_1807092_mock_ski_equipe" reference_qual="cargo=estagiario^EQ" reference_qual_condition="cargo=estagiario^EQ" type="reference"/>
+        <element label="Tarefa" max_length="32" name="tarefa" reference="x_1807092_mock_ski_tarefa_do_projeto" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Concluído" value="concluido"/>
+                <element inactive_on_update="false" label="Em andamento" value="em_andamento"/>
+                <element inactive_on_update="false" label="Aberto" value="aberto"/>
+                <element inactive_on_update="false" label="Cancelado" value="cancelado"/>
+            </choice>
+        </element>
+        <element label="Projeto" max_length="32" name="projeto" reference="x_1807092_mock_ski_projeto" type="reference"/>
+        <index name="index">
+            <element name="equipe"/>
+        </index>
+        <index name="index2">
+            <element name="projeto"/>
+        </index>
+        <index name="index3">
+            <element name="tarefa"/>
+        </index>
+    </element>
+</database>

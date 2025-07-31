@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4d13028e8303e21016c7c4b6feaad36b" label="Aviso" max_length="40" name="x_1807092_mock_ski_aviso" type="collection">
+        <element label="Ativo" max_length="40" name="ativo" type="boolean"/>
+        <element choice="1" label="Urgente" max_length="40" name="urgente" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Média" sequence="2" value="media"/>
+                <element inactive_on_update="false" label="Alta" sequence="3" value="alta"/>
+                <element inactive_on_update="false" label="Baixa" sequence="1" value="baixa"/>
+            </choice>
+        </element>
+        <element label="Descrição" max_length="40" name="descricao" type="string"/>
+        <element label="Projeto" max_length="32" name="projeto" reference="x_1807092_mock_ski_projeto" type="reference"/>
+        <element choice="1" label="Categoria" max_length="40" name="categoria" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Informação" sequence="2" value="informacao"/>
+                <element inactive_on_update="false" label="Evento" sequence="1" value="evento"/>
+            </choice>
+        </element>
+        <element label="Aviso" max_length="40" name="aviso" type="string"/>
+        <index name="index">
+            <element name="projeto"/>
+        </index>
+    </element>
+</database>

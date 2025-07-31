@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>motivo_do_cancelamento</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:23:18</sys_created_on>
+        <sys_id>f2717d4683cfa21016c7c4b6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>motivo_do_cancelamento</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f2717d4683cfa21016c7c4b6feaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:23:18</sys_updated_on>
+        <table>x_1807092_mock_ski_projeto</table>
+        <ui_policy display_value="Mostra e exige Motivo de Cancelamento">7bf0f14683cfa21016c7c4b6feaad35b</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=f2717d4683cfa21016c7c4b6feaad3b1"/>
+</record_update>
