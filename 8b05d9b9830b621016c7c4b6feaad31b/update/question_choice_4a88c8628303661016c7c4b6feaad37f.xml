@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Qual a gravidade do problema?">d4878cee83cf261016c7c4b6feaad3d7</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 19:01:03</sys_created_on>
+        <sys_id>4a88c8628303661016c7c4b6feaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Critica</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>question_choice_4a88c8628303661016c7c4b6feaad37f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 19:01:03</sys_updated_on>
+        <text>Critica</text>
+        <value>critica</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=4a88c8628303661016c7c4b6feaad37f"/>
+</record_update>

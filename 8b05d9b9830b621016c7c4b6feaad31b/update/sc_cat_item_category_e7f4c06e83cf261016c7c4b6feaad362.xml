@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Reportar Bug">d79444aa83cf261016c7c4b6feaad39c</sc_cat_item>
+        <sc_category display_value="Can we help you?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 18:44:58</sys_created_on>
+        <sys_id>e7f4c06e83cf261016c7c4b6feaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can we help you?.Reportar Bug</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sc_cat_item_category_e7f4c06e83cf261016c7c4b6feaad362</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 18:44:58</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

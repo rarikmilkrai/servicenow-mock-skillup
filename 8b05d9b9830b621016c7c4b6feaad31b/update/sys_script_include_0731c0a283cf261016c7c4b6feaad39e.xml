@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1807092_mock_ski.cursoutilis</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>cursoutilis</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CursoUtils = Class.create();
+CursoUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getCursoDuracao: function() {
+        var cursoId = this.getParameter('sysparm_curso_id');
+        var grCurso = new GlideRecord('cursos');
+        if (grCurso.get(cursoId)) {
+            return grCurso.getValue('duracao') || '0';
+        }
+        return '0';
+    },
+
+    type: 'CursoUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 18:29:51</sys_created_on>
+        <sys_id>0731c0a283cf261016c7c4b6feaad39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cursoutilis</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_script_include_0731c0a283cf261016c7c4b6feaad39e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 18:29:51</sys_updated_on>
+    </sys_script_include>
+</record_update>
