@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Mapeamento de Bugs em Lote para Tabela Bug">40a63a17834b6a1016c7c4b6feaad338</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    // --- INÍCIO DA VALIDAÇÃO ---
+    var projectName = source.u_projeto; // Pega o nome do projeto da planilha
+    var taskName = source.u_tarefa;     // Pega o nome da tarefa da planilha
+    var projectSysId = '';
+
+    if (gs.nil(projectName)) {
+        log.error("O nome do projeto não foi informado. Linha do arquivo: " + source.sys_import_row);
+        ignore = true;  // A variável 'ignore = true' diz ao ServiceNow para pular esta linha
+        return;         // Para a execução do script para esta linha
+    }
+
+    // 1. Validação: O projeto informado existe na tabela de Projetos?
+    var grProject = new GlideRecord('u_projeto');
+    grProject.addQuery('u_nome_do_projeto', projectName);
+    grProject.query();
+
+    if (!grProject.next()) {
+        // Se não encontrou o projeto
+        log.error("Projeto '" + projectName + "' não encontrado no sistema. Linha do arquivo: " + source.sys_import_row);
+        ignore = true; // Ignora esta linha
+        return;
+    }
+
+    // Se encontrou, guarda o ID do projeto e já mapeia para o campo de destino no bug
+    projectSysId = grProject.getUniqueValue();
+    target.u_projeto = projectSysId;
+
+    // 2. Validação: Se uma tarefa foi informada, ela existe E pertence ao projeto encontrado?
+    if (!gs.nil(taskName)) {
+        var grTask = new GlideRecord('u_tarefa_do_projeto');
+        grTask.addQuery('u_nome_da_tarefa', taskName);
+        grTask.addQuery('u_projeto', projectSysId); // Filtro crucial: a tarefa deve pertencer ao projeto
+        grTask.query();
+
+        if (!grTask.next()) {
+            // Se não encontrou a tarefa DENTRO do projeto
+            log.error("Tarefa '" + taskName + "' não encontrada ou não pertence ao projeto '" + projectName + "'. Linha do arquivo: " + source.sys_import_row);
+            ignore = true; // Ignora esta linha
+            return;
+        }
+
+        // Se encontrou, mapeia a tarefa no registro de Bug de destino
+        target.u_tarefa_do_projeto = grTask.getUniqueValue();
+    }
+
+    // Se todas as validações passaram, a transformação continua normalmente.
+    log.info("Linha " + source.sys_import_row + " validada com sucesso para o projeto '" + projectName + "'.");
+
+    // Dica: Você pode mapear outros campos aqui também, como um título padrão
+    target.short_description = "Bug em Lote: " + source.u_short_description;
+
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 15:43:09</sys_created_on>
+        <sys_id>cd087697834b6a1016c7c4b6feaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_transform_script_cd087697834b6a1016c7c4b6feaad36c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 15:43:09</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2198000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Quando um certificado de Scripting é enviado, este fluxo aloca o estagiário a um projeto, cria uma tarefa e envia uma notificação.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>processar_certificado_de_scripting</internal_name>
+        <label_cache>[{"name":"Created_1.current.estagiario","label":"Trigger - Record Created➛Certificados Record➛Estagiário","reference":"x_1807092_mock_ski_equipe","reference_display":"Equipe","type":"reference","base_type":"reference","parent_table_name":"x_1807092_mock_ski_certificados","column_name":"estagiario","usedInstances":{"b42f030f-5ba7-4098-baf9-c4d9449967f4":["equipe"],"fda856cb-9c82-4f4a-89c2-73635d36b53c":["assigned_to"]}},{"name":"d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record","label":"1 - Look Up Record➛Projeto Record","reference":"x_1807092_mock_ski_projeto","reference_display":"Projeto","type":"reference","base_type":"reference","usedInstances":{"b42f030f-5ba7-4098-baf9-c4d9449967f4":["projeto"],"fda856cb-9c82-4f4a-89c2-73635d36b53c":["projeto"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.run_start_date_time","label":"Trigger - Record Created➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["data_de_inicio"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Certificados Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1807092_mock_ski_certificados","column_name":"sys_created_on","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["data_de_inicio"]}},{"name":"Created_1.current.estagiario.first_name","label":"Trigger - Record Created➛Certificados Record➛Estagiário➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_equipe","column_name":"first_name","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["nome_da_tarefa"],"e8283855-c1a0-4661-a959-29524c290bdb":[null]}},{"name":"Created_1.current.estagiario.email","label":"Trigger - Record Created➛Certificados Record➛Estagiário➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1807092_mock_ski_equipe","column_name":"email","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":["ah_to"]}},{"name":"d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record.nome_do_projeto","label":"1 - Look Up Record➛Projeto Record➛Nome do Projeto","reference":"","reference_display":"Nome do Projeto","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_projeto","column_name":"nome_do_projeto","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":[null]}},{"name":"fda856cb-9c82-4f4a-89c2-73635d36b53c.record.nome_da_tarefa","label":"3 - Create Record➛Tarefa do Projeto Record➛Nome da Tarefa","reference":"","reference_display":"Nome da Tarefa","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_tarefa_do_projeto","column_name":"nome_da_tarefa","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":[null]}}]</label_cache>
+        <master_snapshot>76a0ae1b83c76a1016c7c4b6feaad32e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Processar Certificado de Scripting</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>dfa0ae1b83c76a1016c7c4b6feaad378</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 13:23:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35489a5f83876a1016c7c4b6feaad32a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Processar Certificado de Scripting</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_hub_flow_35489a5f83876a1016c7c4b6feaad32a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:02:26</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1807092_mock_ski_certificados">curso.curso.treinamento=Scripting on serviceNow<item endquery="false" field="curso.curso.treinamento" goto="false" newquery="false" operator="=" or="false" value="Scripting on serviceNow"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dfa0ae1b83c76a1016c7c4b6feaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:36</sys_updated_on>
+        <table>x_1807092_mock_ski_certificados</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>35489a5f83876a1016c7c4b6feaad32a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:36</sys_created_on>
+        <sys_id>1fa0ae1b83c76a1016c7c4b6feaad379</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:42</sys_updated_on>
+        <trigger display_value="">dfa0ae1b83c76a1016c7c4b6feaad378</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN1fa0ae1b83c76a1016c7c4b6feaad379"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN79489a5f83876a1016c7c4b6feaad32d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>35489a5f83876a1016c7c4b6feaad32a</id>
+        <name>Processar Certificado de Scripting</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 13:23:55</sys_created_on>
+        <sys_id>79489a5f83876a1016c7c4b6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 13:23:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=79489a5f83876a1016c7c4b6feaad32d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN22a06e1b83c76a1016c7c4b6feaad39d,daa06e1b83c76a1016c7c4b6feaad395"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</model>
+        <model_id>35489a5f83876a1016c7c4b6feaad32a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_35489a5f83876a1016c7c4b6feaad32a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>22a06e1b83c76a1016c7c4b6feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=22a06e1b83c76a1016c7c4b6feaad39d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</model>
+        <model_id>35489a5f83876a1016c7c4b6feaad32a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_35489a5f83876a1016c7c4b6feaad32a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>daa06e1b83c76a1016c7c4b6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=daa06e1b83c76a1016c7c4b6feaad395"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN26a06e1b83c76a1016c7c4b6feaad3e7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>26a06e1b83c76a1016c7c4b6feaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYbW/qNhT+K1E+bRKb8gIF+u2O9mqVulYC7vahqyIntsGqsVnipJdd9b/vOC8QkkB57egXJGzj85zHz3mOzdMPkyOfcPPaHCOfE7NlMqFIKBAfL+YEhpUe9gSa6bkZEhgpGS7MaxXGpGXSUM7GZDbnSMFiingEgzLEJDSv7ZaZIB6T0SK6w7AT/D7dJt/TzKfh+3fP7lldq+94Mxm8eNEL8wISKkZZgLCMYCVmEcRY/Jn/YLA+G0wZxyER5vXTc8ucoxDCKA3hR2VKQU7eWsLGQ5YZ0wgDGqC+Q6zAtV3HsSyn17b9K9e3HewiYlmwrspWJSPVQNqKDvJdEYEJXjJV4zMkCD8KvliumMJxZNzN0PeI/Qu79yy9jhLIKiDZ3PKrlxOVDQdTyQLyOFdMimwkw5lNSh7PxEOGX1NMKIq5KiiGkTiC/chcQ9YgckR0NJWvwyLgVybS7PJJLgPEl9+QUiHzY0UifRSUcTgUL+MmknGYoh/eDh6HN95fX8aD32+H3vB2NB7eDca3N+Zbmpf3T6x3zBDmWLwsnbelLr4ywvUBRovIg5NsmVEQsrn6EiiWFLp8a620PpACs5SVmt6DYipa13uR/TbBW9ZGyQeliIXsgziM5K/ZpwoJ00uFkn/HluXiUZoBExNDCiMiYQIn+SBfD1b7oJxXqvarK4QwQRvU7tOS2st8NSSkGqgrc7JN9/nILsJvW9b/JP3c7A5V/kxiwm9W25kwOZlALTAxj5Vm6xUJFXlKeghjr8SjXgqY3iuFLLd6PbxfCWEsYAtveUL1ekiJXDJ6zyJI4AmquWAr3RLm6X2+5TAWoFm+0MIFcQNZyij8kd7N0CTnmI4IJ4EqyYJ+i8rf/mBRBAVQQr0MmrJSi7kMB/IyipSy2NGRwZ9PaQZ10pMKmZV+d3jVF6eXVrxtU+oT6lhdXe+25frUhr7bQRS7lhU4pYqvQ9yIXVWEcpbK36/uo1SifAdBVonPwVvlGtlJXMm6MgsStHByexmcBpp9ImiOhlaxSXcvn1yKNRu+WdfsttROfLNAOEHwC7yrXeoFO/gi5fIVLPoAT/RR8DIJZSxw1aT0ngYTxmqF8VPO388n9EcqQ7IdwPqKS3LGFe2FcJFYnM0TXWr7fdImFlihCy7od/p9P0AOpd2rLnHsiieuwDUi/hRe+I4GkyYRb/LFRjklTSrcwxGPAFhzx70BHu+LuVwbXTGb+xz+9zolwgOooce1w9VscMIZJsXcaT2gFjpZVf2pfOA+T0pHp71+0LG73aAL7yBwAdomPrLbTgf1u1dur1NxgRq8bdBVA1sf8jrSr2ENZINDfMumLutPgnNKOSJKP6gP6OcCbrzpb1AWpNRT9bEYqdHI0HiQ4pe71TpjRKBVpk/kUzX2XVDogzXOC8OXalq7WUDo32B8LbS+kW5g5eKeZBWRJOu5nulJRtq9Tp+6zcZD+03Gs4K4GfzFX0R2rJtkYwU23Uh2LYOksZo2XiEOEHZFPOW7xZbLz6lIsU9OinM+UtyjL1xFhW58hx4C9hM1tvS2cUx30zGJJ2nZ0m+kARMGBDEYNfJ/LAk2/IWhpgQo5XCz1v9P6+jHenm5t9ShLBX8sUCyu3qtx8GwkV+rLq99VaTwES9ogruo03E33J371Rd0E8x3srj4ZrZ3rSRNpbe1o+23b3XPxp5WEvK6TnbsVifNurllHZd1Y9N6L+vj29G2938DigttNM//AdYv/50cIAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN26a06e1b83c76a1016c7c4b6feaad3e9,6aa06e1b83c76a1016c7c4b6feaad3ed,e6a06e1b83c76a1016c7c4b6feaad3eb,eea06e1b83c76a1016c7c4b6feaad3ea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>26a06e1b83c76a1016c7c4b6feaad3e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <ui_id>d4ead8ff-a0ab-4180-b0ce-91002d6a90b1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY23LbNhD9FQ6fZZXUjZLfOvFoJjNt3HHSvLguBiRACzUEMABoW/bo37sgSIqWaN2sJM4jgL2c3T27BHj97DPin/tkEkzSyWQ4joKg3w+C0aif4DCO+6MkDmI88Du+wHMKkgbHnMLyHvPcrh9ROA6iYNJDc5ncIX3HUKbkf9RIECJMZxwvvpayf9UHyYxxoqjwz69vOn6GFRg3VPnnz2tHZpFRxHFMOeh/sb69TxZIZ2/cL5Q347AOqiUSzrRUxGIJOj59NFQQCq5SzDXt+HMsCDZSLeodRTG5FHy1MWPCgEXfCj9q9gTmx4GVSymElVB3Vi9RmSS3ncwkS+hlZpgUbscBdYeS53PxyQVg00tTnHNTpRd2cg32aGYxWxAlovTzTD5cVQ6nTBThlYdcJpjXK2yMYnFuqLa1oJzOwRCa4yxj4tZW9p4VyoBl3r3lsOimXD6AU81uRRcnFngXUoS7U9i/KLa/YsVsFH+CGVAGQIxDtZFLupa5KrJyjxKe6+JAYaGdLX9Z5Ap9yy1KF3UZH3IpAgGdKJaZ30HhnpahLDsVtYdbKTJZUSKRgjDrUzf4rQ02uf4nB2UCTFJG/nt51dykc2Q5YfPUQvlD1Y9rjA9N5PtG3arcloqyRV7slS0SnqxFBkHwk5rEqPz99cgu1ruAd1A/JFtJQFb11lIZ5DLX5P5CowSKZyixXjfJvX5+HHunjHLyYqzvAbxSvrRE9OLFa7GU5E2tj7X53vvl5/sbqZsS5PLCBGei+AyCQXDzjjk93EqNOFzjQVH+BqPtHtbJJpexZ6T3dPwELupa8XcPkJXiZ0DkfXEoW4BXs7cyX1K3fzLq9nuHUReIc/1co6+z1pLg6hZlS1fJP1l5vC4PJGoohMubmvofjvMZHuqzZ32u9Wb/oOZsMsudXLxCsBPf0X5wE3eswxmolv6Qa1b0wMgtNSvvlRSR5gHzu7bzkl11DxXhHXvfqzZtSlYNZBctw2S5+kRufUDEjdshS9EcqsoyuLIqmgBxNMKKolTmgqDysroima1yypQ2pfDmxLmiJlfCk9CgnplRr5D2aulTzKE9oqsUP6ZeFV6JQXsQnleE59XhHZaMV6bX4IS3xrdMrylmvEg9PDqyRu2oUlK9MsF2VG1L+fccb3uCCk8K6u3zr43vrXNwB9Zf4gX71jdpQnE86OFR1A/DIAgDEgXjKArHozgd4WiQrhoNIS0SGKJgOQVigHlUEaGqarA5WtwkPfo3C0zo36aliX3xVsoXUtiHbS8yngUMdfYqwLtDKudFLCWnWKzoOfxpA+O9/InJmb0j/tFWoe/1nXcuX5QjZ38L9i2nHy0pxjTojUOSnI2jMDobpGR0NiF4eIYn8TDqE5oM0qO/5sub/wHWAQHcmhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=26a06e1b83c76a1016c7c4b6feaad3e9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>6aa06e1b83c76a1016c7c4b6feaad3ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <ui_id>e8283855-c1a0-4661-a959-29524c290bdb</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6aa06e1b83c76a1016c7c4b6feaad3ed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>e6a06e1b83c76a1016c7c4b6feaad3eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <ui_id>fda856cb-9c82-4f4a-89c2-73635d36b53c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VwW4aMRD9FeTzsvICpcAtasWtSZVWuaSJ5bVnwY3X3tpeAkX8e8e7hqRpU0VVpapSOeHx+M17b4bhek+UJAsyLYC+mhdTMS7G4xGlo9mkKKfjshjJMQeYkIwYXgNmBl5qYN0hIxuu2xjcsmJGX9P5iNVW3DF/p1jgDirOpGWNs58hWEyXyjea767Sq49dykDawftTilgrLR0Ysri+yUjDHRYK4Mhi/+Qq7BpgmpegOyQkNTjvSb1U0HePnxEYqzyNWScjIZoR2AYwErBexbWHjNTcSB6s25FFcC0GHHB5YfTulLFWJiAgiblbr74i+ozGvApQmoD+7nRkybI+LNZWCbhogrKmj3TE0qXVbW3OexHRbPS21eFoNkZaj3jQRMqRRGJUfVjb+8tjwaUynbp0qa3g+nTiIThVtgF87AdoqBGI1bxplFnFPm9U9xi51PlK4yGvtL3Hol6tTM5FJJ6jQzxfYvxtF77iTkUV7xAGHx869exLG+v2OhJj1ovGBC+casIZwm0gkTtkx0mWQOfPNr4oHxrdDa9/NMVpUD+1lI7lfi8n2LxZVQ055eVwghM+LKmA4bxAVDnlc1oW+SUInIfD4Zb7KAYkewB4g90PGCly0Tp0N+TgA18pFGzxBX4Pre+ToWZxdKKf9jYahJ4xZZRQv0DzO89EilqDiMbW2GGefnsvoZFXyvnQTfbh8OMv9L8jv7uQoEYfAwx6J7MXz+YRYKlAS/+TYT1upFSAbVKBtJWKP7WViintPn9nN/U8/7HV9Ohf4pkldfMN2YnkmXAHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6a06e1b83c76a1016c7c4b6feaad3eb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>eea06e1b83c76a1016c7c4b6feaad3ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <ui_id>b42f030f-5ba7-4098-baf9-c4d9449967f4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUyW7bMBD9lYBnWSAt17V9Cxr41gRIi1zSlKDIkc2GEhWScuwa/vcOtThpWgNBUSCIbpzlzXuz6HZPtCILMmVAP8zZVGYsy8aUjmcTlk+znI1VJgAmJCGVKAEjg8gN8PaRkI0wTTRuOZvRj3Q+5qWV99zfay6MlUJZj1FK+9qI3U0ffP7kkWttlIOKLG7vElILh7ABHFnsX7jCrgZuRA4GAb5GCmeXHYXX0v8t+YScWOWlzToVCdGEwDZApQDrFcJ4SEgpKiWCdTuyCK5BgwOhriqzO0asdRUQkMTYrdc/EX1GY1wBKE1C5zs+ed+pzizXVku4qoO2VWdpifVOa5qyuuxExB5DIRoThh6jpfGIB3WkHEn0jIova/t4PRRc6qpV1zvjYMzxJUJwOm8C+DgPMFAiEC9FXetqxWtnN7pNRi5lujL4SAtjH7Go16sqFTIST7FDIl2i/aI13wino4rPCIPJh1Y9f2hi3U5Hz5h3ojHAS6frcI5wG+jJHZJhbxXQ+cnBs/xp0O2q+mc7Cw+NruFbQ2mm9vtPOLsAirNUNg57E1LwQaw00rWHw3dU+wOCHaLVBCc9K4qRoCIfTXD5RzmVMJozpKCmYk5zll6DxOXBZAQKje9ycQtdsH8exRuz+cdDhBI1BDjrVCSvnskAsNRglP/LkIZL7AvwTV+gv0b2v66RTWn7vc1Ndjzf2Uk++zueOM67X4GDA3dWBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eea06e1b83c76a1016c7c4b6feaad3ea"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN26a06e1b83c76a1016c7c4b6feaad3f0,2ea06e1b83c76a1016c7c4b6feaad3ef,e6a06e1b83c76a1016c7c4b6feaad3f0"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>35489a5f83876a1016c7c4b6feaad32a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record.nome_do_projeto}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>26a06e1b83c76a1016c7c4b6feaad3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>82ff9d89-c994-4705-91bd-eb7d40c7ee3d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>35489a5f83876a1016c7c4b6feaad32a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.estagiario.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>2ea06e1b83c76a1016c7c4b6feaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b2f50ba3-a2cd-477d-937a-8fb6c6e12d93</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>35489a5f83876a1016c7c4b6feaad32a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fda856cb-9c82-4f4a-89c2-73635d36b53c.record.nome_da_tarefa}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>e6a06e1b83c76a1016c7c4b6feaad3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>436cf1ae-3909-4f9e-9c72-6c6945fc3146</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_35489a5f83876a1016c7c4b6feaad32a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>6ea06e1b83c76a1016c7c4b6feaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_35489a5f83876a1016c7c4b6feaad32a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:33</sys_created_on>
+        <sys_id>a6a06e1b83c76a1016c7c4b6feaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_35489a5f83876a1016c7c4b6feaad32a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Quando um certificado de Scripting é enviado, este fluxo aloca o estagiário a um projeto, cria uma tarefa e envia uma notificação.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>processar_certificado_de_scripting</internal_name>
+        <label_cache>[{"name":"Created_1.current.estagiario","label":"Trigger - Record Created➛Certificados Record➛Estagiário","reference":"x_1807092_mock_ski_equipe","reference_display":"Equipe","type":"reference","base_type":"reference","parent_table_name":"x_1807092_mock_ski_certificados","column_name":"estagiario","usedInstances":{"b42f030f-5ba7-4098-baf9-c4d9449967f4":["equipe"],"fda856cb-9c82-4f4a-89c2-73635d36b53c":["assigned_to"]}},{"name":"d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record","label":"1 - Look Up Record➛Projeto Record","reference":"x_1807092_mock_ski_projeto","reference_display":"Projeto","type":"reference","base_type":"reference","usedInstances":{"b42f030f-5ba7-4098-baf9-c4d9449967f4":["projeto"],"fda856cb-9c82-4f4a-89c2-73635d36b53c":["projeto"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.run_start_date_time","label":"Trigger - Record Created➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["data_de_inicio"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Certificados Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1807092_mock_ski_certificados","column_name":"sys_created_on","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["data_de_inicio"]}},{"name":"Created_1.current.estagiario.first_name","label":"Trigger - Record Created➛Certificados Record➛Estagiário➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_equipe","column_name":"first_name","usedInstances":{"fda856cb-9c82-4f4a-89c2-73635d36b53c":["nome_da_tarefa"],"e8283855-c1a0-4661-a959-29524c290bdb":[null]}},{"name":"Created_1.current.estagiario.email","label":"Trigger - Record Created➛Certificados Record➛Estagiário➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1807092_mock_ski_equipe","column_name":"email","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":["ah_to"]}},{"name":"d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record.nome_do_projeto","label":"1 - Look Up Record➛Projeto Record➛Nome do Projeto","reference":"","reference_display":"Nome do Projeto","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_projeto","column_name":"nome_do_projeto","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":[null]}},{"name":"fda856cb-9c82-4f4a-89c2-73635d36b53c.record.nome_da_tarefa","label":"3 - Create Record➛Tarefa do Projeto Record➛Nome da Tarefa","reference":"","reference_display":"Nome da Tarefa","type":"string","base_type":"string","parent_table_name":"x_1807092_mock_ski_tarefa_do_projeto","column_name":"nome_da_tarefa","usedInstances":{"e8283855-c1a0-4661-a959-29524c290bdb":[null]}}]</label_cache>
+        <master>true</master>
+        <name>Processar Certificado de Scripting</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Processar Certificado de Scripting">35489a5f83876a1016c7c4b6feaad32a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76a0ae1b83c76a1016c7c4b6feaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:34</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=76a0ae1b83c76a1016c7c4b6feaad32e^sys_idNOT INb6a0ae1b83c76a1016c7c4b6feaad32f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>76a0ae1b83c76a1016c7c4b6feaad32e</id>
+        <name>Processar Certificado de Scripting</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:34</sys_created_on>
+        <sys_id>b6a0ae1b83c76a1016c7c4b6feaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b6a0ae1b83c76a1016c7c4b6feaad32f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=76a0ae1b83c76a1016c7c4b6feaad32e^sys_idNOT INb6a0ae1b83c76a1016c7c4b6feaad349,f6a0ae1b83c76a1016c7c4b6feaad330"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</model>
+        <model_id>76a0ae1b83c76a1016c7c4b6feaad32e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_76a0ae1b83c76a1016c7c4b6feaad32e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>b6a0ae1b83c76a1016c7c4b6feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b6a0ae1b83c76a1016c7c4b6feaad349"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</model>
+        <model_id>76a0ae1b83c76a1016c7c4b6feaad32e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_76a0ae1b83c76a1016c7c4b6feaad32e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>f6a0ae1b83c76a1016c7c4b6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f6a0ae1b83c76a1016c7c4b6feaad330"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=76a0ae1b83c76a1016c7c4b6feaad32e^sys_idNOT IN43a0ae1b83c76a1016c7c4b6feaad365"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>43a0ae1b83c76a1016c7c4b6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYbW/qNhT+K1E+bRKb8gIF+u2O9mqVulYC7vahqyIntsGqsVnipJdd9b/vOC8QkkB57egXJGzj85zHz3mOzdMPkyOfcPPaHCOfE7NlMqFIKBAfL+YEhpUe9gSa6bkZEhgpGS7MaxXGpGXSUM7GZDbnSMFiingEgzLEJDSv7ZaZIB6T0SK6w7AT/D7dJt/TzKfh+3fP7lldq+94Mxm8eNEL8wISKkZZgLCMYCVmEcRY/Jn/YLA+G0wZxyER5vXTc8ucoxDCKA3hR2VKQU7eWsLGQ5YZ0wgDGqC+Q6zAtV3HsSyn17b9K9e3HewiYlmwrspWJSPVQNqKDvJdEYEJXjJV4zMkCD8KvliumMJxZNzN0PeI/Qu79yy9jhLIKiDZ3PKrlxOVDQdTyQLyOFdMimwkw5lNSh7PxEOGX1NMKIq5KiiGkTiC/chcQ9YgckR0NJWvwyLgVybS7PJJLgPEl9+QUiHzY0UifRSUcTgUL+MmknGYoh/eDh6HN95fX8aD32+H3vB2NB7eDca3N+Zbmpf3T6x3zBDmWLwsnbelLr4ywvUBRovIg5NsmVEQsrn6EiiWFLp8a620PpACs5SVmt6DYipa13uR/TbBW9ZGyQeliIXsgziM5K/ZpwoJ00uFkn/HluXiUZoBExNDCiMiYQIn+SBfD1b7oJxXqvarK4QwQRvU7tOS2st8NSSkGqgrc7JN9/nILsJvW9b/JP3c7A5V/kxiwm9W25kwOZlALTAxj5Vm6xUJFXlKeghjr8SjXgqY3iuFLLd6PbxfCWEsYAtveUL1ekiJXDJ6zyJI4AmquWAr3RLm6X2+5TAWoFm+0MIFcQNZyij8kd7N0CTnmI4IJ4EqyYJ+i8rf/mBRBAVQQr0MmrJSi7kMB/IyipSy2NGRwZ9PaQZ10pMKmZV+d3jVF6eXVrxtU+oT6lhdXe+25frUhr7bQRS7lhU4pYqvQ9yIXVWEcpbK36/uo1SifAdBVonPwVvlGtlJXMm6MgsStHByexmcBpp9ImiOhlaxSXcvn1yKNRu+WdfsttROfLNAOEHwC7yrXeoFO/gi5fIVLPoAT/RR8DIJZSxw1aT0ngYTxmqF8VPO388n9EcqQ7IdwPqKS3LGFe2FcJFYnM0TXWr7fdImFlihCy7od/p9P0AOpd2rLnHsiieuwDUi/hRe+I4GkyYRb/LFRjklTSrcwxGPAFhzx70BHu+LuVwbXTGb+xz+9zolwgOooce1w9VscMIZJsXcaT2gFjpZVf2pfOA+T0pHp71+0LG73aAL7yBwAdomPrLbTgf1u1dur1NxgRq8bdBVA1sf8jrSr2ENZINDfMumLutPgnNKOSJKP6gP6OcCbrzpb1AWpNRT9bEYqdHI0HiQ4pe71TpjRKBVpk/kUzX2XVDogzXOC8OXalq7WUDo32B8LbS+kW5g5eKeZBWRJOu5nulJRtq9Tp+6zcZD+03Gs4K4GfzFX0R2rJtkYwU23Uh2LYOksZo2XiEOEHZFPOW7xZbLz6lIsU9OinM+UtyjL1xFhW58hx4C9hM1tvS2cUx30zGJJ2nZ0m+kARMGBDEYNfJ/LAk2/IWhpgQo5XCz1v9P6+jHenm5t9ShLBX8sUCyu3qtx8GwkV+rLq99VaTwES9ogruo03E33J371Rd0E8x3srj4ZrZ3rSRNpbe1o+23b3XPxp5WEvK6TnbsVifNurllHZd1Y9N6L+vj29G2938DigttNM//AdYv/50cIAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=76a0ae1b83c76a1016c7c4b6feaad32e^sys_idNOT IN43a0ae1b83c76a1016c7c4b6feaad362,4ba0ae1b83c76a1016c7c4b6feaad362,c3a0ae1b83c76a1016c7c4b6feaad361,cba0ae1b83c76a1016c7c4b6feaad364"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>43a0ae1b83c76a1016c7c4b6feaad362</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <ui_id>b42f030f-5ba7-4098-baf9-c4d9449967f4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTW/bMAz9K4XOjiEnWZbkVqToaWuBdsil6wxaohOtsuVKcposyH8fZTsf6BpsAwYM9U3kI/UexeeHLVOSTdkoQf5hkozEIBkM+pz3x8MkGw2ypC8HgDhkESuhQEJ6yDSmzSFiK9B1CK7TZMw/8kk/LYx4St2TSkEbAdI4QknlKg2beQe+PGbEUmlpsWTTh8eIVWCprUfLpttXqT8lqSFDTdAvgeUZ0n5TvRn7dFp7cdMmjJWBD48Yrj2WEolIDtphxAooJXhjN2zqbU0BiyBvS705IJaq9NSQBezaqR907ZgHXI6kTGCbOxzTblBtOL8CD/fUWfjadlCxNEqga2ciMYda+9lprAXcVl6Zsi1pZHbVRtdFedOOhB0a7N+FIrUjElgFnYF5JyO/X5qXuz3La1U2I+mS4TH14QTeW5XVPvDZMtRYUKO0gKpS5SKtrFmpppi4FPFC0yHOtXmhS51alDGIQDymsUJ8TfGrJjwHq4KKz9SGincRcxs30+DcUQsNMX2uA5NWWachbccQSoRVlb+kC1bY0d1F++2XyCdnFyvJjovULLw72Xx8rlWFX2vOB3K7ndEKeJRpEova0rR8jM7DQpEAs9t9I/3f0Zs9Wg5pYcZ53gMOWW9IFuplXGBvkhAFOYIJz5L4DgXtIBVTI1+7tpY21Xrzq7X+M5u/tPPvp76387VCLd0bz7D3MhY0Bo9p+yyv/NwlL+ZdsvN08q88nYx4870jZ7fi3r2xT/7hZyz++BMH0wjQ4gYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=43a0ae1b83c76a1016c7c4b6feaad362"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>4ba0ae1b83c76a1016c7c4b6feaad362</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <ui_id>fda856cb-9c82-4f4a-89c2-73635d36b53c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTU8bMRD9K5HPm5U3SdMktwrEqYUKKi4ULK89m7h47a3tBdIo/73jXSdEFFoq9YLUnOL58nvPM7NXG6IkWZBpAfTdvJiKcTEejygdzSZFOR2XxUiOOcCEZMTwGjAy8FID6w4ZueO6jcYHVszoezofsdqKW+ZvFQvcQcWZtKxx9hsEi+FS+Ubz9WXK+tKFDKQdfN6HiJXS0oEhi6vrjDTc4UUBHFlsnrheC1vzEnR3GeJ+gUZYN8/aPh7mDk57h3Uy4qEZgYcARgICqbj2kJGaG8mDdWuyCK5FgwMuz4xe7yNWygQsSGLsg1c/8NoZjXEVIDMBvW9/ZEmx3lwd88AvsLIIrUuhYmWVAN9rIlHOVoejQ1sfcNYEZU2f0tFM2Va3tTntJSH7ArsHQkvrEQQ0kWdEnmhUFyt7f75DeaJMJ0lyaiu43p94CE6VbYh4NgQ01FiI1bxplFnG3rhTXTJiqfOlxkNeaXuPl3q1NDkXEXiOsvL8BO3HnfmSOxVZfMIymLzNiF/7I829f+SCIrLvbUTSM0scWC9DTBFONeEDXnAHCe42282DBDp/sbGK8rGRuhHwB7OQ2v1rS+lYbjZygj0wq6ohp7wcTnBOhiUVMJwXWFVO+ZyWRX4OAttqu71BBkgPJHsscIRNFNBS5KJ1qHfIwQe+VCiBxQz8H1rfB0PNYgdGhe1NlAxVZMoooX5TDZVjIlmtwYrG1vjmPE3wa2DklXI+dJOz3f465/8V+du19ufu2621EwVa+mfacbfToManCMD69nyy15JzcJmcabcV/2q3FVPa/d7QhuvJvfkFd/Ate2HVXf8ETdo08fwHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ba0ae1b83c76a1016c7c4b6feaad362"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>c3a0ae1b83c76a1016c7c4b6feaad361</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <ui_id>d4ead8ff-a0ab-4180-b0ce-91002d6a90b1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnSbRZLtpdslKJGKuaFJlaSSOIH/e4eiJAu2YluoAyTYI4dD8s3Me0NK3198Rvxzn8yCWTqbjadREAyHQTCZDBMcxvFwksRBjEd+zxd4ScHT4JhTGD5gntvxEwqnQRTMBmgpk3uk7xnKlPyPGglOhOmM49W30veveiJZME4UFf759x89P8MKNjdU+ecvW1PHouM4phxcb0t4W2jNKquHqJhzti/NZd5XNyEVsVCCnk+fDBWEAoYUc017/hILgo1Uq9qiKCZXgm8MCyYM7Ohb5yfNnuHcaWD9UgpRJdTN1UNU5siZ00ts8I1ReWJyVbomC8kSql0+CE1xzs1F0+YcrjLDpHBLXNhuteT5Unx16fDrDaqSgCXXAIJmNlCLvAwjvVnIx+sK5ZyJIiflJJcJ5vUIG6NYnBuL58WnnC5hI7TEWcbEnWXDAysWA5Zl/47DoJ9y+QiHanYn+jixwPuQV9yfg/2yMH/Ditko/oRtYDEAYhwYglwJtcxVkcoHlPBcFxMKC+328tc9X6/0BcdabyKHlKOfucXt8lBGjFzS7JJEscx8gi0eaBnculcJZLyXgrMN5RIpCLModEMl2mCT639yWEyAcsrIf6+um0a6RJZaNnMtwum6vKO8DsdWyeuiGVxbwKXQdmxf2jYohRaeTGijIPhIUoPD35/SumvHpeCAgEKyl2RkwyctlUEul00FrTRKgAOGEnvqrkS257tp4Ah4lQauLGu9ePUa4lICKaOctN01czuxddcM/p93zbsUAAAiyFWPCc5E8XAAoG+ljPFe6sXhFs8KejV0YW1YJ7uKwJ6R3nNnJRwBp1LCDZzt3To8LRCru6CgzPY9UBlLAQxPJoDh4DQCeKnDrBPZkvPqrWirWfk/W3+87Q8UbCwI120C63Rm2PXMwXpXwMNOCm6Szc1cvsK5Ez8qX1Fk7y1bwAKWluchp1/0yMgdNZvTKy8izSPm923zJeNQVagivNM9UCujTdJGe3bQ0nHWm9t47xdV3HjOshQtoc4sg1e3oglQSSOsKEplLggq39sb2tm6p0xpUzrvtqVrCmoTngQZe2ZBvcLbq707XtuH46gS/zn1qkDK07QHgXhFIF4dSLewu7S40QmfuaducXPMeFEN+JTKGuWkSkn1Sps7UMg9jDiyBx4JKjwpqN9vkm0SaG2WB7B+iO/y039pJxTHowGeRMMwDIIwIFEwjaJwOonTCY5G6UajCGmRQO+FnVOgCmyPKmpUdQ52+49rwF0bzRGoKgpeSmE/ygeR8SwsqK9XwToMvGwosZScYrHVUW7hVvljXuIv+Tp+d13lQ/ylytntdqadqTXXb/XKyNnfgv3M6WdLsSkNBtOQJGfTKIzORimZnM0IHp/hWTyOhoQmo/SED4f1j1+KoF5D/BUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c3a0ae1b83c76a1016c7c4b6feaad361"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Processar Certificado de Scripting">76a0ae1b83c76a1016c7c4b6feaad32e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>cba0ae1b83c76a1016c7c4b6feaad364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <ui_id>e8283855-c1a0-4661-a959-29524c290bdb</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cba0ae1b83c76a1016c7c4b6feaad364"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=76a0ae1b83c76a1016c7c4b6feaad32e^sys_idNOT IN47a0ae1b83c76a1016c7c4b6feaad365,c3a0ae1b83c76a1016c7c4b6feaad365,c7a0ae1b83c76a1016c7c4b6feaad365"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>76a0ae1b83c76a1016c7c4b6feaad32e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{d4ead8ff-a0ab-4180-b0ce-91002d6a90b1.Record.nome_do_projeto}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>47a0ae1b83c76a1016c7c4b6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>82ff9d89-c994-4705-91bd-eb7d40c7ee3d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>76a0ae1b83c76a1016c7c4b6feaad32e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.estagiario.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>c3a0ae1b83c76a1016c7c4b6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b2f50ba3-a2cd-477d-937a-8fb6c6e12d93</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>76a0ae1b83c76a1016c7c4b6feaad32e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{fda856cb-9c82-4f4a-89c2-73635d36b53c.record.nome_da_tarefa}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>c7a0ae1b83c76a1016c7c4b6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>436cf1ae-3909-4f9e-9c72-6c6945fc3146</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_76a0ae1b83c76a1016c7c4b6feaad32e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>fea0ae1b83c76a1016c7c4b6feaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_76a0ae1b83c76a1016c7c4b6feaad32e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:35</sys_created_on>
+        <sys_id>fea0ae1b83c76a1016c7c4b6feaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_76a0ae1b83c76a1016c7c4b6feaad32e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>35489a5f83876a1016c7c4b6feaad32a</sys_id>
+        <latest_snapshot>76a0ae1b83c76a1016c7c4b6feaad32e</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=35489a5f83876a1016c7c4b6feaad32a^sys_idNOT IN13a0ae1b83c76a1016c7c4b6feaad37b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>35489a5f83876a1016c7c4b6feaad32a</plan_id>
+        <snapshot>76a0ae1b83c76a1016c7c4b6feaad32e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 14:00:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13a0ae1b83c76a1016c7c4b6feaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:00:36</sys_updated_on>
+        <trigger display_value="">dfa0ae1b83c76a1016c7c4b6feaad378</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=35489a5f83876a1016c7c4b6feaad32a"/>
+</record_update>

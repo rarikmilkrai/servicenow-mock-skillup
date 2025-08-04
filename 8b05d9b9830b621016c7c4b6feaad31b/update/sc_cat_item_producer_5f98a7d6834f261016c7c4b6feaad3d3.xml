@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Can we help you?">e15706fc0a0a0aa7007fc21e1ab70c2f</category>
         <checked_out/>
         <cost>0</cost>
         <custom_cart/>
@@ -70,7 +70,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -101,14 +101,14 @@ if (grCurso.get(producer.curso_feito)) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-01 16:42:11</sys_created_on>
         <sys_id>5f98a7d6834f261016c7c4b6feaad3d3</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Envio de Certificados</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sc_cat_item_producer_5f98a7d6834f261016c7c4b6feaad3d3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-01 18:34:51</sys_updated_on>
+        <sys_updated_on>2025-08-04 13:57:35</sys_updated_on>
         <table_name>x_1807092_mock_ski_certificados</table_name>
         <taxonomy_topic/>
         <template/>
@@ -116,7 +116,7 @@ if (grCurso.get(producer.curso_feito)) {
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>7</version>
+        <version>9</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
