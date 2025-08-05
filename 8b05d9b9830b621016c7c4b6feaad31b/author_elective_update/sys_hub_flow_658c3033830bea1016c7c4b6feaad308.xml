@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatiza o processamento de bugs em lote via anexo .xlsx</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>processar_bugs_em_lote</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Processar Bugs em Lote</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:00:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>658c3033830bea1016c7c4b6feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Processar Bugs em Lote</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_hub_flow_658c3033830bea1016c7c4b6feaad308</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:00:00</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_variable_value action="DELETE" query="document_key=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=658c3033830bea1016c7c4b6feaad308^sys_idNOT INe18c3033830bea1016c7c4b6feaad30b"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>658c3033830bea1016c7c4b6feaad308</id>
+        <name>Processar Bugs em Lote</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:00:00</sys_created_on>
+        <sys_id>e18c3033830bea1016c7c4b6feaad30b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:00:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=e18c3033830bea1016c7c4b6feaad30b"/>
+    <sys_hub_flow_input action="DELETE" query="model=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_flow_output action="DELETE" query="model=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_hub_flow_variable action="DELETE" query="model=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_658c3033830bea1016c7c4b6feaad308"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_658c3033830bea1016c7c4b6feaad308"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=658c3033830bea1016c7c4b6feaad308"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</application>
+        <file_path/>
+        <instance_id>03a7915adb6606d02f082a591396191c</instance_id>
+        <instance_name>dev273797</instance_name>
+        <name>sys_hub_flow_658c3033830bea1016c7c4b6feaad308</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><attributes>labelCacheCleanUpExecuted=true</attributes><authored_on_release_version>27000</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description>Automatiza o processamento de bugs em lote via anexo .xlsx</description><display_name_after_preview/><flow_priority>MEDIUM</flow_priority><generation_source/><internal_name>processar_bugs_em_lote</internal_name><label_cache>null</label_cache><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Processar Bugs em Lote</name><natlang/><outputs/><pre_compiled>false</pre_compiled><remote_trigger_id/><run_as>user</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><substatus/><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 20:00:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>658c3033830bea1016c7c4b6feaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Processar Bugs em Lote</sys_name><sys_overrides/><sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope><sys_update_name>sys_hub_flow_658c3033830bea1016c7c4b6feaad308</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 20:00:00</sys_updated_on><type>flow</type><updation_source/><version>2</version></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=658c3033830bea1016c7c4b6feaad308"/><sys_variable_value action="delete_multiple" query="document_key=658c3033830bea1016c7c4b6feaad308"/><sys_hub_flow_stage action="delete_multiple" query="flow=658c3033830bea1016c7c4b6feaad308"/><sys_flow_cat_variable_model action="delete_multiple" query="id=658c3033830bea1016c7c4b6feaad308^sys_idNOT INe18c3033830bea1016c7c4b6feaad30b"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>658c3033830bea1016c7c4b6feaad308</id><name>Processar Bugs em Lote</name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 20:00:00</sys_created_on><sys_id>e18c3033830bea1016c7c4b6feaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 20:00:00</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e18c3033830bea1016c7c4b6feaad30b"/><sys_hub_flow_input action="delete_multiple" query="model=658c3033830bea1016c7c4b6feaad308"/><sys_hub_flow_output action="delete_multiple" query="model=658c3033830bea1016c7c4b6feaad308"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=658c3033830bea1016c7c4b6feaad308"/><sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=658c3033830bea1016c7c4b6feaad308"/><sys_hub_action_instance_v2 action="delete_multiple" query="flow=658c3033830bea1016c7c4b6feaad308"/><sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=658c3033830bea1016c7c4b6feaad308"/><sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=658c3033830bea1016c7c4b6feaad308"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=658c3033830bea1016c7c4b6feaad308"/><sys_hub_flow_variable action="delete_multiple" query="model=658c3033830bea1016c7c4b6feaad308"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_658c3033830bea1016c7c4b6feaad308"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_658c3033830bea1016c7c4b6feaad308"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=658c3033830bea1016c7c4b6feaad308"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=658c3033830bea1016c7c4b6feaad308"/></record_update>]]></payload>
+        <payload_hash>1388124746</payload_hash>
+        <record_name>Processar Bugs em Lote</record_name>
+        <reverted_from/>
+        <source>a635153d830b621016c7c4b6feaad34f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:00:00</sys_created_on>
+        <sys_id>6d8c3033830bea1016c7c4b6feaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987bd1bfce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:00:00</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>218c30336d0bea10b1d558ac03d9480f</update_guid>
+        <update_guid_history>218c30336d0bea10b1d558ac03d9480f:1388124746</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:07:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>50464643779140be9f99d18179449844</sys_id>
+        <sys_metadata>658c3033830bea1016c7c4b6feaad308</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Processar Bugs em Lote</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_scope_delete display_value="">17742cfd8a8b48cc85d9b6598c58ae01</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_658c3033830bea1016c7c4b6feaad308</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_658c3033830bea1016c7c4b6feaad308">6d8c3033830bea1016c7c4b6feaad30f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:07:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>mover_anexo_para_data_source_de_bugs</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Mover Anexo para Data Source de Bugs</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:07:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc5efc7383c7ea1016c7c4b6feaad305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mover Anexo para Data Source de Bugs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_dc5efc7383c7ea1016c7c4b6feaad305</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:07:50</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_variable_value action="DELETE" query="document_key=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_step_instance action="DELETE" query="action=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_action_input action="DELETE" query="model=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_action_output action="DELETE" query="model=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=dc5efc7383c7ea1016c7c4b6feaad305"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</application>
+        <file_path/>
+        <instance_id>03a7915adb6606d02f082a591396191c</instance_id>
+        <instance_name>dev273797</instance_name>
+        <name>sys_hub_action_type_definition_dc5efc7383c7ea1016c7c4b6feaad305</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_status/><action_template/><active>true</active><annotation/><attributes>{labelCacheCleanUpExecuted=true}</attributes><authored_on_release_version>27000</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><flow_priority/><ih_action>false</ih_action><internal_name>mover_anexo_para_data_source_de_bugs</internal_name><label_cache/><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Mover Anexo para Data Source de Bugs</name><natlang/><outputs/><pre_compiled>false</pre_compiled><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 20:07:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc5efc7383c7ea1016c7c4b6feaad305</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Mover Anexo para Data Source de Bugs</sys_name><sys_overrides/><sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope><sys_update_name>sys_hub_action_type_definition_dc5efc7383c7ea1016c7c4b6feaad305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 20:07:50</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_variable_value action="delete_multiple" query="document_key=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_step_instance action="delete_multiple" query="action=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_action_input action="delete_multiple" query="model=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_action_output action="delete_multiple" query="model=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=dc5efc7383c7ea1016c7c4b6feaad305"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_dc5efc7383c7ea1016c7c4b6feaad305"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_dc5efc7383c7ea1016c7c4b6feaad305"/><sys_hub_action_plan action="delete_multiple" query="action_id=dc5efc7383c7ea1016c7c4b6feaad305"/></record_update>]]></payload>
+        <payload_hash>-1327938443</payload_hash>
+        <record_name>Mover Anexo para Data Source de Bugs</record_name>
+        <reverted_from/>
+        <source>a635153d830b621016c7c4b6feaad34f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:07:50</sys_created_on>
+        <sys_id>545ebcb3830bea1016c7c4b6feaad3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987bd8ecc80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:07:50</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>185ebcb36f0bea10113b1f211b0127f6</update_guid>
+        <update_guid_history>185ebcb36f0bea10113b1f211b0127f6:-1327938443</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:21:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>140fac54f02240c08eb6af2173ada900</sys_id>
+        <sys_metadata>dc5efc7383c7ea1016c7c4b6feaad305</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mover Anexo para Data Source de Bugs</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_scope_delete display_value="">17742cfd8a8b48cc85d9b6598c58ae01</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_dc5efc7383c7ea1016c7c4b6feaad305</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_dc5efc7383c7ea1016c7c4b6feaad305">545ebcb3830bea1016c7c4b6feaad3f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:21:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

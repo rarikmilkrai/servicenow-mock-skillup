@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9110000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Inicia a importação de bugs quando uma solicitação em lote é criada.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>disparar_importao_de_bugs_em_lote</internal_name>
+        <label_cache>[{"name":"8207dde8-bd8c-4c60-9bf0-8790696a30e1.Record","label":"4 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"d52fc06f-9ca1-4a63-89b7-12867d118286":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ca0295f3-b9b6-4f76-86ac-aafae3899288.Record","label":"2 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"f33d3c4c-cda6-46e4-a256-eb569a33b730":["attachment_file_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record","label":"1 - Look Up Record➛Data Source Record","reference":"sys_data_source","reference_display":"Data Source","type":"reference","base_type":"reference","usedInstances":{"f33d3c4c-cda6-46e4-a256-eb569a33b730":["record"],"d52fc06f-9ca1-4a63-89b7-12867d118286":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Serviço Compartilhado Table","reference":"x_1807092_mock_ski_servi_o_compartilhado","reference_display":"Serviço Compartilhado","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Serviço Compartilhado Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1807092_mock_ski_servi_o_compartilhado","column_name":"sys_id","usedInstances":{"ca0295f3-b9b6-4f76-86ac-aafae3899288":["conditions"],"a84e495e-ad93-4d51-89ac-b87f94f1275c":["conditions"],"8207dde8-bd8c-4c60-9bf0-8790696a30e1":["conditions"]}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_id","label":"1 - Look Up Record➛Data Source Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_data_source","column_name":"sys_id","usedInstances":{}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_scope.name","label":"1 - Look Up Record➛Data Source Record➛Application➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_scope","column_name":"name","usedInstances":{}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_created_on","label":"1 - Look Up Record➛Data Source Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sys_data_source","column_name":"sys_created_on","usedInstances":{}}]</label_cache>
+        <master_snapshot>330c8137834bea1016c7c4b6feaad313</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Disparar Importação de Bugs em Lote</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>041c8137834bea1016c7c4b6feaad344</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:33:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e34cdb3830bea1016c7c4b6feaad330</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Disparar Importação de Bugs em Lote</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name>sys_hub_flow_0e34cdb3830bea1016c7c4b6feaad330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:30</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1807092_mock_ski_servi_o_compartilhado">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>041c8137834bea1016c7c4b6feaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:53</sys_updated_on>
+        <table>x_1807092_mock_ski_servi_o_compartilhado</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>0e34cdb3830bea1016c7c4b6feaad330</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 23:05:30</sys_created_on>
+        <sys_id>bef62df783cbea1016c7c4b6feaad342</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:30</sys_updated_on>
+        <trigger display_value="">041c8137834bea1016c7c4b6feaad344</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT INbef62df783cbea1016c7c4b6feaad342"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT IN4234cdb3830bea1016c7c4b6feaad331"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0e34cdb3830bea1016c7c4b6feaad330</id>
+        <name>Disparar Importação de Bugs em Lote</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:33:37</sys_created_on>
+        <sys_id>4234cdb3830bea1016c7c4b6feaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:33:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4234cdb3830bea1016c7c4b6feaad331"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT IN0fca81b3834bea1016c7c4b6feaad334,c7ca81b3834bea1016c7c4b6feaad32d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</model>
+        <model_id>0e34cdb3830bea1016c7c4b6feaad330</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e34cdb3830bea1016c7c4b6feaad330</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>0fca81b3834bea1016c7c4b6feaad334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:02:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0fca81b3834bea1016c7c4b6feaad334"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</model>
+        <model_id>0e34cdb3830bea1016c7c4b6feaad330</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0e34cdb3830bea1016c7c4b6feaad330</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>c7ca81b3834bea1016c7c4b6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:02:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c7ca81b3834bea1016c7c4b6feaad32d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT INd7ca09b3834bea1016c7c4b6feaad38c"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>d7ca09b3834bea1016c7c4b6feaad38c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbetk0UDbDeo7d19CFKBkkibCEW6EqXEXeR7+iH9sQ51syzJjh0rW+fFgEiKc3h05szQd991hlzM9Et9jlyG9Z5OucQhR2y+XmEYlmrY4ShQcwHiPpIiXOuXMoxxTyehCOY4WDEkYTFBLIJBEfo41C/Nnp4gFuPZOrrxYSd4P90m31PPp+H5yTFHxtAYW04gvAcneqBOhMOEOsLxRLBCoaRsiXwBr/g0gmDrr/mbM7Xs33+ENqmt85aU+SHm+uXdfU+HKYgsFarvtSmqoHnEQ2MLG55t2pZlGNaob7oXtmtavo2wYcCGdZpqR5EtbG14wE8Scx/7JUUNIkOM/FvO1uWKJXyHjLQAPUX0b9h9ZKh1BAN2D2dz5aOTE5MNe0tBPXy7klTwbCTDmU0KFgf8c4ZfUYoJipksKIWROIL98EpBViByRGS2FI/TIuBHytPT5ZNMeIiVT0jKkLqxxJEinFAG1DsZN5GIwxT99HpyO71yvn2YT367njrT69l8ejOZX1/pz+m5nL9itWOGMMfiZMd5LnXwkWKmPiCPAxfQ9PTIC+lKfvAkTQpBPvc2Ip8I7tOUlYbQvWIq2hZ6cfp9SjeMnVr3KhELvf95/UdTytngcbq9uEDIx2iHbl1S0W315C3QZAsJ1dPtU3A+coiE+4bxP4k496vXajgQPmZXm+10mFwsQNWUr2Kp2HpEXEaOFA7yfafCo1oKmF4SdXa25xcVHMYcXnDK79HUcUpbyd8nGgHcO8jCgpt0S5gnn/ItpzHXBHw4+NG8OARqpFb4GrkJ0CJnlMwww56siIB8iapPv9MoonxRQV0GTTloxCzDgZi04khZ7OjE4PddJnGT9KRGZi2Zj85k0yTExcQyhiqPTcN2iQklcYCIbxuGZ1UyuQlmJ0pZk8SbZPRx+RylYmQHSK9OcQ7eqGbDQTJKtjVYkKAkktvGpBtoZkfQLAWtZn/2Uf5XyjIbvtpW576jdVz7kZ8geMM/1AYPdEDCxCNY7yvcz0XewyIUMffrdqT21CjXNiu0n3L+fu7QCYkI8X4A2yvOyQM3tBfCRXzdgfvZxHTHuI8NMD0b/M4djMeuhyxChhdDbJk199vAaMX2LlzvBbUlbXLd5YCtwkna9HaE950AsOGDRwM83QFzYbb6Xzb3PpzucYm5A1BDhykvaxjeglEfF3PdZnsjdLLJ71MznozG3sAcDr0h3Fog40kfu8jsWwM0Hl7Yo0Et4xtQ9sGULcz8kLtMtI5SIDvc4Es2dV6X87eUbYSlVOXo+CrNoY9N30FZkEqlVJ9FS01FhNpnwX+52azTZhgKYHqh7apcH4JCfVjtbWG4Qi4b/QKE/hXGt0KrPnMHK2d3paqJJNk+68lXKtwfDcbEbrcYMm6zmA2Y3TDPvr04MEOSnbnW1mccKvikNW92NgavkHBNJtWOYU9L0xUpZuekWG9Hin1yG1Xk4s575GvAvqMSlvYVp9QxFRM7glTN+0poMKFBEI0SLf8nEfuau9bkEgOlDPplCKip6Ke6drWKNKGUCv6xQLIOvFHNYFjLG6jzK1Q1KXR7A8b+EA0G9o5+eFy/AbcBegHv2Zeto7MiaUuyvbXruH3re7ZWr4pktxVxYF3q9NTtxem0U7eWp5dOfXrh2Xd/b0FxpiXl/j8yqn9YYR8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT IN17ca09b3834bea1016c7c4b6feaad38e,36ecd97b838bea1016c7c4b6feaad33c,3e0c4137834bea1016c7c4b6feaad358,b35d01b7834bea1016c7c4b6feaad3bd,d7ca09b3834bea1016c7c4b6feaad38f,faecd97b838bea1016c7c4b6feaad33e,ff5d01b7834bea1016c7c4b6feaad37d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>17ca09b3834bea1016c7c4b6feaad38e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>321761ef-d04d-4870-a570-a0ebf1a8024a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY227jNhD9FUJPLeC4ku/OW5vAQIB0A6zTxQLbBUGJlE2UJrUklWwS5Gv60A/ZH+tQpGzDdmwLdYAEfeTMkDwzc86I9peniNPoPKLjeJyPx/3RMI673TgeDLoZSdK0O8jSOCW9qBVJsmAQaUkqGCzviCjd2jwYTIkl2KhSZ85DuSkEefgUAi7Biaa1M5tzQTWT0fmXr62oIBpOtUxH508brmNhCZIyAaG3AdcGTPtQLJe48nnb9fo29ME7lKYOStyK2HfLJGWAISfCsFa0IBKyVPphadGM0BspVoY5lxZOjFzwd8Mf4d5R7OJyBlllzPuWSxzq5M25K9PU6jKzpQ6h2VzxjBlfD8pyUgp7sW7zATeF5Ur6LT5tv1uJciE/+HJEywPqtoClNACCFS5RhzykkU/n6v5jjXLCZVWT4BQqI2K5ItZqnpbW4XmKmGALOAgvSFFwOcOFVne82gxYFu2ZgEU7F+oeLjV8Jtskc8Dbjj3tCdgvK/MnornL4nc4BjYDIC6AIdi3MLDsPLrDmShN5dBEGn9W9NxyhLwQxJhV5lBy/K10uH0dQsbYF81tyTQv7K9wxB0LyT23amX091JwvKJcpiTlDoVZk4fz/VnCVnq1KJS25Mc/P/5WiDL0WzkziC3QtbIM/fT5evr5523xNN3eUF6Hc6vldbGe3K6Eg9C2bNe7DghCS04mtF4cvyepweVvT2nNteNLcEBACd1LMrrikwGCY1/LNQVti6Ixz4+AUPP8xjETpQ8voQo0zzkTdNf3ZOIcG9+Tzv/ze/ImSQ6AKPbd41JwWT0OAOhrsb+/l3ppssGzil5rjytnIybb1gBBVqHHxko4Ak6thCncjW49nh0Q63lfUWZz1tfGIIDuyQTQ7ZxGAE/LNJeF3FHz+j3oulnHP7p4shkPFFzbkDzvElijO5Omd3aetwXcbaTgdbJ5z+ULnDvxw/EFRbZecwTMYWu4D3v94ntOZ8yubq+jqLL3RPy1yx8Yh+tGVem9wiM02fs7KF17hPIcL6BzvIC3smYZkMNgohnOVSkpDq/kFZFcJ3OujQ3B24PmIwP9SKRAmMjOGaqi0TK64Yf4cB51Ka9yVCcSbjMIEkFVImiZSLO0mwyt3gkfp6ceWhPCRdUN+AFUrLWTaa30C4PrQCP3MOLIqXYkqOSkoP772NslgZ3j7wDWd/Fr+vSjKWMk7XXIYNhNkjhOYjqMR8NhMhqk+YAMe/lKoxgbmcE0hZNzoAocj2tq1H2Ot+ePH6lNB80RqGoKXirpfmF3hhY5WNBfVMM6DDwMlFQpwYjcmCi38J34ZRLwB77239xUeRf/LZX8drPS3rSz1q/1bij5H5J/K9mVo9iIxZ1RQrOz0TAZnvVyOjgbU9I/I+O0P+xSlvXyUz4Fvv4LGNg0NqsVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=17ca09b3834bea1016c7c4b6feaad38e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:32</sys_created_on>
+        <sys_id>36ecd97b838bea1016c7c4b6feaad33c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>9424ea48-25d6-4cc3-8e87-4a65e80674e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K1GeNqmrkqaUtjxNVExIDCRAvACLbuKb1pLjZLZT6FD/+65jJ1SAGEi8oPXN5374nOt72l4/hJyF83CMLIpn8SRP4iQZRdFoOo6zSZLFI5YAYhwOQgklUqbCvFKMzmsQjQUme7PJbLafTJNphhBH1GQ/H2eTAgFYkkwplXFdC9hc+QpC8hUXTKEM59e3g7AGRc0NqnD+8CT0VnYCMhSUet7Re0rXbGp7ZlXelChNyjvwxFcufCQ4XlCEiiydOBqEeG9QMiQiBQiNg7AEycBUahPOjWoIUAjsTIpNn7Hi0jihJdxr/oduHkc2r0BSlvsh9MfUD8jBxQIMXFDn3DSqn1fFc9RuJgwLaIQ53MVcwllteCVdiYFMdNWVaEp56iYS9g123qPRRAJrq9Myd7KKi1V1d96RPOKyHYmXKKocRH8CYxTPGmPpPIQosJ1xCXXN5TKtVbXmbTFRKYdLQYdhIao7ulPzpRxCbnkPaaowPCJ80cJXoLgV8ZPaUPF2EOqNPhSg9aMUmmH6u7FMnDAvIW2n0I4gbTfBFueK1+Y7XbVGT3w78Puf7b22YfnscaF2ej56QOcrZI1AlloJKS/rSpnni3/RpQX2iYPjLu19bngD184Nl+0OvMzdG+IZdrJbG5y6gLfD3ofZYfqZ7OBlfHo//MsF0ejV79mdTWoXX+84ANqGN00UJcxuwS/VyFQbUMZhBfvmbkb23BfvK36fW96gqXPLEUfB9AsiO6tgSawNpk70E7v4YHDlg/0vyId5Jp5E7ecTOec/+CFxEh1mOfe7aw+vpdJ+qWDJTOCWPJB4F/ywiujZ8JKX+OXrwY2khCEwdkH/YyTTX5LIggrpRaUtPiCyGtbI+jfYbre3fwGOjeUY1wkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=36ecd97b838bea1016c7c4b6feaad33c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Delete Attachment">bdc2a0170f973300dfd3694e68767e47</action_type>
+        <action_type_parent display_value="Delete Attachment">6672502a9353130079b5925cf67ffbc6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bdc2a0170f973300dfd3694e68767e47</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:48</sys_created_on>
+        <sys_id>3e0c4137834bea1016c7c4b6feaad358</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>f33d3c4c-cda6-46e4-a256-eb569a33b730</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+WWbWviQBDHv4rktXrRxCT65igVoXDXQi33ppQw2Qdd2DxcsmnrSb/7zSYb40NrFXpcj0MQdmZnd+Y/83O9X1uCWhPLp2QI9sC3+dh3HNumnDre2GVe4Hs+cwOrayUQM9yZM5LmFNePIEttWK+d4cD3Boz3qO3Snhv4dg9G+stmER9AYA9d6N9WcS8vGElFkUlY/TAHoIUshaQ5S6zJ/UPXyiDHuxTLrcl6z3VqshIiJnHrPC1zwjq3TdL7RahVptc0JWXMEhWKxvjNHDA1ns7VFD0YpLMadC32rFhCGabDQRasa8WQUFBpvrImKi/RkDOgN4lcbXYsRaLqcmN4LsQvvNgZ6n2cYX1E5yESIijeZm2ZQyMXuq9aN5+CgjneRFSZb1RMBWFFrRRlHEqpLrdt9YabTIk0qUMURLKJTmUZJ9e1QNbmgKZLjLsO8ahrA34ibK9NfJ+PI+4EPnDmtBHTg/aWBVbBMi2YlqDWh8+X6dNtU+VMJJW0RiuZEpCbFZ8zyMlyJpjU/U/KOMK9XQuUykVUKl3f2irF3WvdrM2v95NJVm2MIctEsgizPH0UVR4oR9xfSFz0uUyfMP1CLJI+EK1dHzsN/Rnap5X5B+RCC/kdj8Hgl65VrIpLCUXRyon9DH+WuqhaXKNGWHWiboOOI7nI1AXe8shM+S/dhtHxsbEf2e1418e1iGI2oU45LCocDhHUw9SZN84zaXw/rYbGO5PXXpoGwmoZVr5dBquwznXtMAgOPwrBwN5F8A30/gZyh+RseDgZnTcQ2dF6l5AdtUUR1iNpkq5O/UTgvMdMNDo6nKN2GFEoIMuqKC5abdpXjoA9HI+404vGkddzue/1Ag9ID4ADc4LxeBgER1658w84D8MTKm0wvNiU2pmJttfHhTCQFjhOyWIP0HljNHA6x+E0ltPotP9LPjcy77K5Efqf4W9wdCqhHTuKJSkWgpThFnaDQ5D0T/v5dLyfR0PHtEqkcyFlpwWl+PpWpoaLKE0lg2T/5cJcv8zMb6aBw/0wONzPi0bzTrz+l7Dx/il62mbsPW3b7fjsCD38BidlIwycDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3e0c4137834bea1016c7c4b6feaad358"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
+        <action_type_parent display_value="Copy Attachment">95849c2a9353130079b5925cf67ffb91</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30fe6cdb0f973300dfd3694e68767e5a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:13:37</sys_created_on>
+        <sys_id>b35d01b7834bea1016c7c4b6feaad3bd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>d52fc06f-9ca1-4a63-89b7-12867d118286</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/82V3WrjMBCFXyXo2glK7NpO7kpDYWG3hab0phQzlkaJQLG9stw2G/ruK9lO4iRNf6DLlkDAMxrpzBl99v2aSE4mRDCBIeMpFePI9ynlgvvhOMAwjsIIz4B4JIMl2pVgDLDFEjOTaGS55jb1CKpyufU6HtGIc4z7KY9ZP2Ah7Y9TQftxNKbhOASf4nBwU9e9vNhKLstCwequ3cBG2EIqrjEjk/sHjxSg7bEGNZmsD1If1a0gRWWXzvJKM+ydb/X3bjb632jNrAqX0ijQnsywDf1sN73pxG2B0zn0CD4bzDhagQJUiR5ZQsbB5HpFJkZXNqAR+HWmVtsVC5mZxoAlPJfyjz3UH3mdcyekXJXJTiLpJJPWRrvovLtATMHAzJ7ITKW3/uaSYdl4yFFApcxFN9YsuC6MzLOmxECqNtW5qpbZVeMX2W7QmV9VWjlYuP5dR217YrbIn7ZmXcqstqpNqpyB6ixF0GxxKVHVE5YKk3pAnhuQlmllnNQ1qeTt8XCa4GvjQYX1aJdQFDKbJ4XOH2Utw3a1HMyVfRgIlT9Z+aWcZwNgzoKBHRwMLm18WofvQEvnxy+7jS1+8dxcLhSU5c4VKyj5XbmeGo9aN5LGUFfCtCzMuT3gEdvGX7wWRXuX37jSId3dVwN6jq9i6I+GUThE0ec04P0gjmgfztwfxVQMIaajAL4Sww9o3mB4W4s+Yu+wl5Y7nrOqnprkB+RN20zvx3TH3uhfsXeCtv/BGIrAZyEPKNhfaqdKWRQJ+5b14wgE+ruK6dFUD+Bs/PgEmycA3J/SPoL7c/ouEDZ2v0OiCN681VH39rrtdgS6V7WTnJT1R+eYMHdperNN8pPfvPdl7WBrdB3IbOGqHzfv1i5bdVnvqkm0aPlfhVZMvy1aX/H5OoHIntf7hOy5LcukuZKt6HrXbwTOKWYe/gKltKqeSgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b35d01b7834bea1016c7c4b6feaad3bd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>d7ca09b3834bea1016c7c4b6feaad38f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>ca0295f3-b9b6-4f76-86ac-aafae3899288</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnQboMn20i0IiqRiYmlSpaikjuH/vkORsgVbsS2sAyTYo2aG5JuZ90aUfqxDTsPrkM6iWTabjadJFA2HUTSZDAmO03Q4IWmU4lHYCyVeMog0OBUMHp+wKO1zsSoQNgaTxZJJAw7Ki1zg1Xfv/9T0kQUXVDMZXv/42QtzrGFPw3R4vd5znQtK4JQJCH3wqPZAmlW+fUSVz9m+NJcFX51DaWqhRL2Q/TZMUgYYMiwK1guXWFJslF5tLZpheifFzrDgkOF1GNrg3wV/gXOnkY3LGGRFmPNtH5EvkzNnt9jge6NLYkrtQ8lCccIKVw/KMlwKc9O0uYC73HAl3RKXtlutRLmUX105wu0GdVfAUhYAguU2UYvcp5HdL9TztxrlnMuqJt4pFMFi+wRd1zwtjcWzDplgtsloifOcy0eUa/XEq8WAZdl/FPDQz4R6hkML/ij7mFjgfagr7s/BfluZv2PNbRZ/wjawGABxAQxBroWFKnVVyidERFlUDo1l4fYKNz1LxxuBi2KXOZQc/SotblcHnzFyRbNLiOa5+QRbPDGf3KZX62J8lIKzHeWIkpRbFEVDHB41SITTv0vYgq7XN0AdwyiK+6TUUGXTd/7N5lA8ndd3FNjp7GqB3TTTa0vZS+3A9qVtAy+1+GJSG0XRRxIbHP7+tNZdPa4EJyQU06Mkozs+FUob5GrZ0NChKjrz/AwINc/vLDODdPUaKk/zjDNB294oc+vYe6MM/p9vlHdJcgBEkesel4LLasoC0Ldi//go9dJ4j2cVvRqXK2vDBTnUAA6MCl46K+EMOLUS7uHs4MHhaYFYz/uKMvuzvjZ6AQwvJoDh4DICWG/T3Baypeb1jdB2s45/sfF4Px4o2FgQb9oE1unMuOuZg82hgIedFNwkm/PcvsK5C18dX1Fk7y1HwAKW+vOQ0y965vSRmd3pdRRV5hmLf9r8nnGoblSV3htcQ+OjX0Jp4xrKM7SEzvEc7o2aESAHfJ5phjJVSor8PXlHJNvJjOvC+ODDQfONgX5koECYgVmwoIoOttEdX8Sn86hL+TkL6kT8aUUAiQRVIsE2kW5pdxlaowteTi89tOaYi6ob8AmUN9rJtFb6lcF1opFHGHHmVDsTVHxRUP997LVJoHX8ncD6Ib6nLz+aCMPpaIAnyTCOoyiOaBJNkySeTtJsgpNRttMoQoUkME1h5wyoAtujmhp1n6PD+eNGatdBcwaqmoK3StpP60FiAgsL+hvUsE4D9wMlVUowLPcmygO8J/6Ye/yer+N3N1U+xN+lkj/sV9qZWmv9VveGkv8l+a+SfbYUm7JoMI0puZomcXI1yujkakbx+ArP0nEypIyMskteBX7+C/TqYjKrFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7ca09b3834bea1016c7c4b6feaad38f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:32</sys_created_on>
+        <sys_id>faecd97b838bea1016c7c4b6feaad33e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>8104a1ee-7482-4d79-851c-b7d8174120fa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPVZU0JbS9IapKSCxIsOLComhiT6gl52NtB+ii/vcdJ04aFcSCxKXa3Dxffm/yXnL/yqRgSzZDEYSLMOZRGEXTIJjOZ2EaR2k4FREghmzMCsiRKjXyUgs6P4GqXSA+WcSLxWk0j+YpQhjQkFM+S+MMAUQUzalUSFMp2N75DorwjVRCY8GW9w9jVoGm4RY1W74epD6LTkGKikpvOniHcO22cmdR8jrHwiayC176zpXPjC5WlKEmBycMxgxfLBYCCUgGyuCY5VAIsKXesqXVNQU0grgu1Lav2MjCtkRzeDHyD908C1xdhsSM+yX0x8QvqA1nK7BwS5O5rXW/r1JyNO1OBGZQK3s+jLUF15WVZdG2WEhV112qOi+u2o2wfsDgfdSGQGDleDrkLa3sdlM+33Qg17JoVuIpqpKD6k9grZZpbR2cV4YKmx3nUFWyeEwqXT7Jppmg5JNHRYdJpspnutPIx2IC3OGe0FZhsqb4qgnfgZaOxA8aQ827MTNbc67AmD0V2mHyu3ZIWmKeQtJsoVlB0ijBNXMtK3tGVz2hB74be/2nJx8pjC/2ghrM3HvA8A2KWqFIHIVE5lWp7Vvh33ZlI/eKRxdd2dfc8AmsnRt+Nhp4H7s3xJvY5bB3dNUmvB1Ovs0O82Oyg6dx9H74lwuC6Yff2YGSGuGbgQOgGfirDoJINEPfqv+9kq8p/xP4OuWvJSph3gHcyR5zwmYxaQkcSN8nR3c+2f8Nvk3/YRw0zxG54H/5KXRBAr3bPfwFkVG32SIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=faecd97b838bea1016c7c4b6feaad33e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:13:37</sys_created_on>
+        <sys_id>ff5d01b7834bea1016c7c4b6feaad37d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:57</sys_updated_on>
+        <ui_id>8207dde8-bd8c-4c60-9bf0-8790696a30e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnQboMn20i0IiqRiYmlSpaikjuH/vkORsgVbsS2sAyTYo2aG5JuZ90aUfqxDTsPrkM6iWTabjadJFA2HUTSZDAmO03Q4IWmU4lHYCyVeMog0OBUMHp+wKO1zsSoQNgaTxZJJAw7Ki1zg1Xfv/9T0kQUXVDMZXv/42QtzrGFPw3R4vd5znQtK4JQJCH3wqPZAmlW+fUSVz9m+NJcFX51DaWqhRL2Q/TZMUgYYMiwK1guXWFJslF5tLZpheifFzrDgkOF1GNrg3wV/gXOnkY3LGGRFmPNtH5EvkzNnt9jge6NLYkrtQ8lCccIKVw/KMlwKc9O0uYC73HAl3RKXtlutRLmUX105wu0GdVfAUhYAguU2UYvcp5HdL9TztxrlnMuqJt4pFMFi+wRd1zwtjcWzDplgtsloifOcy0eUa/XEq8WAZdl/FPDQz4R6hkML/ij7mFjgfagr7s/BfluZv2PNbRZ/wjawGABxAQxBroWFKnVVyidERFlUDo1l4fYKNz1LxxuBi2KXOZQc/SotblcHnzFyRbNLiOa5+QRbPDGf3KZX62J8lIKzHeWIkpRbFEVDHB41SITTv0vYgq7XN0AdwyiK+6TUUGXTd/7N5lA8ndd3FNjp7GqB3TTTa0vZS+3A9qVtAy+1+GJSG0XRRxIbHP7+tNZdPa4EJyQU06Mkozs+FUob5GrZ0NChKjrz/AwINc/vLDODdPUaKk/zjDNB294oc+vYe6MM/p9vlHdJcgBEkesel4LLasoC0Ldi//go9dJ4j2cVvRqXK2vDBTnUAA6MCl46K+EMOLUS7uHs4MHhaYFYz/uKMvuzvjZ6AQwvJoDh4DICWG/T3Baypeb1jdB2s45/sfF4Px4o2FgQb9oE1unMuOuZg82hgIedFNwkm/PcvsK5C18dX1Fk7y1HwAKW+vOQ0y965vSRmd3pdRRV5hmLf9r8nnGoblSV3htcQ+OjX0Jp4xrKM7SEzvEc7o2aESAHfJ5phjJVSor8PXlHJNvJjOvC+ODDQfONgX5koECYgVmwoIoOttEdX8Sn86hL+TkL6kT8aUUAiQRVIsE2kW5pdxlaowteTi89tOaYi6ob8AmUN9rJtFb6lcF1opFHGHHmVDsTVHxRUP997LVJoHX8ncD6Ib6nLz+aCMPpaIAnyTCOoyiOaBJNkySeTtJsgpNRttMoQoUkME1h5wyoAtujmhp1n6PD+eNGatdBcwaqmoK3StpP60FiAgsL+hvUsE4D9wMlVUowLPcmygO8J/6Ye/yer+N3N1U+xN+lkj/sV9qZWmv9VveGkv8l+a+SfbYUm7JoMI0puZomcXI1yujkakbx+ArP0nEypIyMskteBX7+C/TqYjKrFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ff5d01b7834bea1016c7c4b6feaad37d"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT INf2ecd97b838bea1016c7c4b6feaad33d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">faecd97b838bea1016c7c4b6feaad33c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:32</sys_created_on>
+        <sys_id>f2ecd97b838bea1016c7c4b6feaad33d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:27</sys_updated_on>
+        <ui_id>fe998cc1-6ccf-4a07-bfe5-912e40a620c4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YWW/bOBD+K4KevS6pM/Zb0WyBPuy2aIy8LAqBokY2sbSkpaikbpD/XpKiZMWWncvpsS1gwOYMNec3oxnfuGUjq0bWi/J1XbNl4c7/+TRxWaFp6veNW5A1uHM3awSRrCwSuanAnbhXhDeaDp8rziiTSXdB8TJWV5xsLu2VP+0VZ3CFrhjPBFh1FRFKiwThzm92WFpdwkkKXEl6syoZ1dpZpk7BLPbDMxzEPvKxj1AaYYiiII7SPCLxWajudQ+eW83OorX+gFPma64ssGpKkWmbMEIT5aiEIgOlOCe8hom7JkVGZCk2PUUAyd4XfEtYsUIqea6+/LlmX5TwAOl7OSgHKbS8/pjYwLXk1oo2CZ0fY6E8lgnrALqdbGV8BK7YVzAmQ1jeiAw8lPEBBIVCkuWolKrnjsjxblVWM8hJw+Wb07mIT+CidyIXfe1im773lWHNXV/Di6Tc5pyWvFkXf7cwdPuAXB6rqvbK+f3F1dTKKqg0XDX+LBjzi1V5/bHD2ltWGFstk5eU8P5EpBQsbaROzY0LHNZKULImVcWKZVKJ8oqZh5Ub6+mSq8M05+W1UqpbyJRQbchUVQeZvlX0c0O+JILpAPylxKiHbw3wk/8arbcNgbU4MQHTF2oqWCVfU50va5xOka3eQQ4kW4NITNdKlFrQ50G29nvSk1vQuZL+atGKN10ozXEW4QinsR95qgv5AY0oRDMAjMnMQ4MuNICUMdgxBjvaYMda/GDXbKsywTf0xDJeoGcZWY9pWj3qHwX6nwW5KvF10kLT+maUnwDRba63yX8ZCL8rJCxbPzSAz5Dv+2hGQz/uAZxlAHkep9gDPArgLVRHbLbYZL2e35j82TE58grEsxj9gbD6OAjN1SdA+yANkHMBtCyy+ukdd6va4BVyHIT00NiXwsjYt4vWgTd3++j+SPAdR7/fiH0OYvfmvKRUanXWBhgmuTSm7KC2I59iS8koCTAKD8DViwZwXZihQOwOr87A8Ie7eGCX8X+YXaYL8m4uxnaWFPJSDF+HPaEf/49vFfcow49S5j17vu9xNzrTd9ydOpai+RHLuLOQbpJjO9bgmoXmFnT31fzdPf3JDeAbbwY498LsYOXH/pHK398IHuDTfStB8D94lz2zBsZfOZNfrjZquoKs4S9UCX1mukrI0zBUQ9uBSoi8uyObSoAjV+DkJVeR1aeBuYfcsHETA9UW9uEJYe97d2FP18XQiLESuNiyf4Wx7qnj2yeNxFZS3UIqA8pqpXChae+6P6Q1Y6NAwOiQdF2Kf7WpW9rtV5edM0raFgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e34cdb3830bea1016c7c4b6feaad330</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>5fca09b3834bea1016c7c4b6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:02:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e34cdb3830bea1016c7c4b6feaad330</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:02:22</sys_created_on>
+        <sys_id>c7ca81b3834bea1016c7c4b6feaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:02:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0e34cdb3830bea1016c7c4b6feaad330"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Inicia a importação de bugs quando uma solicitação em lote é criada.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>disparar_importao_de_bugs_em_lote</internal_name>
+        <label_cache>[{"name":"8207dde8-bd8c-4c60-9bf0-8790696a30e1.Record","label":"4 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"d52fc06f-9ca1-4a63-89b7-12867d118286":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ca0295f3-b9b6-4f76-86ac-aafae3899288.Record","label":"2 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"f33d3c4c-cda6-46e4-a256-eb569a33b730":["attachment_file_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record","label":"1 - Look Up Record➛Data Source Record","reference":"sys_data_source","reference_display":"Data Source","type":"reference","base_type":"reference","usedInstances":{"f33d3c4c-cda6-46e4-a256-eb569a33b730":["record"],"d52fc06f-9ca1-4a63-89b7-12867d118286":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Serviço Compartilhado Table","reference":"x_1807092_mock_ski_servi_o_compartilhado","reference_display":"Serviço Compartilhado","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Serviço Compartilhado Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1807092_mock_ski_servi_o_compartilhado","column_name":"sys_id","usedInstances":{"ca0295f3-b9b6-4f76-86ac-aafae3899288":["conditions"],"a84e495e-ad93-4d51-89ac-b87f94f1275c":["conditions"],"8207dde8-bd8c-4c60-9bf0-8790696a30e1":["conditions"]}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_id","label":"1 - Look Up Record➛Data Source Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_data_source","column_name":"sys_id","usedInstances":{}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_scope.name","label":"1 - Look Up Record➛Data Source Record➛Application➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_scope","column_name":"name","usedInstances":{}},{"name":"321761ef-d04d-4870-a570-a0ebf1a8024a.Record.sys_created_on","label":"1 - Look Up Record➛Data Source Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sys_data_source","column_name":"sys_created_on","usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Disparar Importação de Bugs em Lote</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Disparar Importação de Bugs em Lote">0e34cdb3830bea1016c7c4b6feaad330</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>330c8137834bea1016c7c4b6feaad313</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:29</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_variable_value action="delete_multiple" query="document_key=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=330c8137834bea1016c7c4b6feaad313^sys_idNOT IN730c8137834bea1016c7c4b6feaad314"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>330c8137834bea1016c7c4b6feaad313</id>
+        <name>Disparar Importação de Bugs em Lote</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>730c8137834bea1016c7c4b6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=730c8137834bea1016c7c4b6feaad314"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=330c8137834bea1016c7c4b6feaad313^sys_idNOT IN330c8137834bea1016c7c4b6feaad315,3f0c8137834bea1016c7c4b6feaad320"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</model>
+        <model_id>330c8137834bea1016c7c4b6feaad313</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_330c8137834bea1016c7c4b6feaad313</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>330c8137834bea1016c7c4b6feaad315</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=330c8137834bea1016c7c4b6feaad315"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</model>
+        <model_id>330c8137834bea1016c7c4b6feaad313</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_330c8137834bea1016c7c4b6feaad313</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>3f0c8137834bea1016c7c4b6feaad320</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f0c8137834bea1016c7c4b6feaad320"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=330c8137834bea1016c7c4b6feaad313^sys_idNOT INbf0c8137834bea1016c7c4b6feaad32d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>bf0c8137834bea1016c7c4b6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACutixnbetk0UDbDeo7d19CFKBkkibCEW6EqXEXeR7+iH9sQ51syzJjh0rW+fFgEiKc3h05szQd991hlzM9Et9jlyG9Z5OucQhR2y+XmEYlmrY4ShQcwHiPpIiXOuXMoxxTyehCOY4WDEkYTFBLIJBEfo41C/Nnp4gFuPZOrrxYSd4P90m31PPp+H5yTFHxtAYW04gvAcneqBOhMOEOsLxRLBCoaRsiXwBr/g0gmDrr/mbM7Xs33+ENqmt85aU+SHm+uXdfU+HKYgsFarvtSmqoHnEQ2MLG55t2pZlGNaob7oXtmtavo2wYcCGdZpqR5EtbG14wE8Scx/7JUUNIkOM/FvO1uWKJXyHjLQAPUX0b9h9ZKh1BAN2D2dz5aOTE5MNe0tBPXy7klTwbCTDmU0KFgf8c4ZfUYoJipksKIWROIL98EpBViByRGS2FI/TIuBHytPT5ZNMeIiVT0jKkLqxxJEinFAG1DsZN5GIwxT99HpyO71yvn2YT367njrT69l8ejOZX1/pz+m5nL9itWOGMMfiZMd5LnXwkWKmPiCPAxfQ9PTIC+lKfvAkTQpBPvc2Ip8I7tOUlYbQvWIq2hZ6cfp9SjeMnVr3KhELvf95/UdTytngcbq9uEDIx2iHbl1S0W315C3QZAsJ1dPtU3A+coiE+4bxP4k496vXajgQPmZXm+10mFwsQNWUr2Kp2HpEXEaOFA7yfafCo1oKmF4SdXa25xcVHMYcXnDK79HUcUpbyd8nGgHcO8jCgpt0S5gnn/ItpzHXBHw4+NG8OARqpFb4GrkJ0CJnlMwww56siIB8iapPv9MoonxRQV0GTTloxCzDgZi04khZ7OjE4PddJnGT9KRGZi2Zj85k0yTExcQyhiqPTcN2iQklcYCIbxuGZ1UyuQlmJ0pZk8SbZPRx+RylYmQHSK9OcQ7eqGbDQTJKtjVYkKAkktvGpBtoZkfQLAWtZn/2Uf5XyjIbvtpW576jdVz7kZ8geMM/1AYPdEDCxCNY7yvcz0XewyIUMffrdqT21CjXNiu0n3L+fu7QCYkI8X4A2yvOyQM3tBfCRXzdgfvZxHTHuI8NMD0b/M4djMeuhyxChhdDbJk199vAaMX2LlzvBbUlbXLd5YCtwkna9HaE950AsOGDRwM83QFzYbb6Xzb3PpzucYm5A1BDhykvaxjeglEfF3PdZnsjdLLJ71MznozG3sAcDr0h3Fog40kfu8jsWwM0Hl7Yo0Et4xtQ9sGULcz8kLtMtI5SIDvc4Es2dV6X87eUbYSlVOXo+CrNoY9N30FZkEqlVJ9FS01FhNpnwX+52azTZhgKYHqh7apcH4JCfVjtbWG4Qi4b/QKE/hXGt0KrPnMHK2d3paqJJNk+68lXKtwfDcbEbrcYMm6zmA2Y3TDPvr04MEOSnbnW1mccKvikNW92NgavkHBNJtWOYU9L0xUpZuekWG9Hin1yG1Xk4s575GvAvqMSlvYVp9QxFRM7glTN+0poMKFBEI0SLf8nEfuau9bkEgOlDPplCKip6Ke6drWKNKGUCv6xQLIOvFHNYFjLG6jzK1Q1KXR7A8b+EA0G9o5+eFy/AbcBegHv2Zeto7MiaUuyvbXruH3re7ZWr4pktxVxYF3q9NTtxem0U7eWp5dOfXrh2Xd/b0FxpiXl/j8yqn9YYR8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=330c8137834bea1016c7c4b6feaad313^sys_idNOT IN3b0c8137834bea1016c7c4b6feaad32d,5d6d41b7834bea1016c7c4b6feaad3fa,5d6d41b7834bea1016c7c4b6feaad3fb,60fc1d7b838bea1016c7c4b6feaad36d,68fc1d7b838bea1016c7c4b6feaad36d,730c8137834bea1016c7c4b6feaad32c,7b0c8137834bea1016c7c4b6feaad32c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Delete Attachment">bdc2a0170f973300dfd3694e68767e47</action_type>
+        <action_type_parent display_value="Delete Attachment">6672502a9353130079b5925cf67ffbc6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bdc2a0170f973300dfd3694e68767e47</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>3b0c8137834bea1016c7c4b6feaad32d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <ui_id>f33d3c4c-cda6-46e4-a256-eb569a33b730</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+WWbWviQBDHv4rktXrRxCT65igVoXDXQi33ppQw2Qdd2DxcsmnrSb/7zSYb40NrFXpcj0MQdmZnd+Y/83O9X1uCWhPLp2QI9sC3+dh3HNumnDre2GVe4Hs+cwOrayUQM9yZM5LmFNePIEttWK+d4cD3Boz3qO3Snhv4dg9G+stmER9AYA9d6N9WcS8vGElFkUlY/TAHoIUshaQ5S6zJ/UPXyiDHuxTLrcl6z3VqshIiJnHrPC1zwjq3TdL7RahVptc0JWXMEhWKxvjNHDA1ns7VFD0YpLMadC32rFhCGabDQRasa8WQUFBpvrImKi/RkDOgN4lcbXYsRaLqcmN4LsQvvNgZ6n2cYX1E5yESIijeZm2ZQyMXuq9aN5+CgjneRFSZb1RMBWFFrRRlHEqpLrdt9YabTIk0qUMURLKJTmUZJ9e1QNbmgKZLjLsO8ahrA34ibK9NfJ+PI+4EPnDmtBHTg/aWBVbBMi2YlqDWh8+X6dNtU+VMJJW0RiuZEpCbFZ8zyMlyJpjU/U/KOMK9XQuUykVUKl3f2irF3WvdrM2v95NJVm2MIctEsgizPH0UVR4oR9xfSFz0uUyfMP1CLJI+EK1dHzsN/Rnap5X5B+RCC/kdj8Hgl65VrIpLCUXRyon9DH+WuqhaXKNGWHWiboOOI7nI1AXe8shM+S/dhtHxsbEf2e1418e1iGI2oU45LCocDhHUw9SZN84zaXw/rYbGO5PXXpoGwmoZVr5dBquwznXtMAgOPwrBwN5F8A30/gZyh+RseDgZnTcQ2dF6l5AdtUUR1iNpkq5O/UTgvMdMNDo6nKN2GFEoIMuqKC5abdpXjoA9HI+404vGkddzue/1Ag9ID4ADc4LxeBgER1658w84D8MTKm0wvNiU2pmJttfHhTCQFjhOyWIP0HljNHA6x+E0ltPotP9LPjcy77K5Efqf4W9wdCqhHTuKJSkWgpThFnaDQ5D0T/v5dLyfR0PHtEqkcyFlpwWl+PpWpoaLKE0lg2T/5cJcv8zMb6aBw/0wONzPi0bzTrz+l7Dx/il62mbsPW3b7fjsCD38BidlIwycDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b0c8137834bea1016c7c4b6feaad32d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:13:43</sys_created_on>
+        <sys_id>5d6d41b7834bea1016c7c4b6feaad3fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:13:43</sys_updated_on>
+        <ui_id>8207dde8-bd8c-4c60-9bf0-8790696a30e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnQboMn20i0IiqRiYmlSpaikjuH/vkORsgVbsS2sAyTYo2aG5JuZ90aUfqxDTsPrkM6iWTabjadJFA2HUTSZDAmO03Q4IWmU4lHYCyVeMog0OBUMHp+wKO1zsSoQNgaTxZJJAw7Ki1zg1Xfv/9T0kQUXVDMZXv/42QtzrGFPw3R4vd5znQtK4JQJCH3wqPZAmlW+fUSVz9m+NJcFX51DaWqhRL2Q/TZMUgYYMiwK1guXWFJslF5tLZpheifFzrDgkOF1GNrg3wV/gXOnkY3LGGRFmPNtH5EvkzNnt9jge6NLYkrtQ8lCccIKVw/KMlwKc9O0uYC73HAl3RKXtlutRLmUX105wu0GdVfAUhYAguU2UYvcp5HdL9TztxrlnMuqJt4pFMFi+wRd1zwtjcWzDplgtsloifOcy0eUa/XEq8WAZdl/FPDQz4R6hkML/ij7mFjgfagr7s/BfluZv2PNbRZ/wjawGABxAQxBroWFKnVVyidERFlUDo1l4fYKNz1LxxuBi2KXOZQc/SotblcHnzFyRbNLiOa5+QRbPDGf3KZX62J8lIKzHeWIkpRbFEVDHB41SITTv0vYgq7XN0AdwyiK+6TUUGXTd/7N5lA8ndd3FNjp7GqB3TTTa0vZS+3A9qVtAy+1+GJSG0XRRxIbHP7+tNZdPa4EJyQU06Mkozs+FUob5GrZ0NChKjrz/AwINc/vLDODdPUaKk/zjDNB294oc+vYe6MM/p9vlHdJcgBEkesel4LLasoC0Ldi//go9dJ4j2cVvRqXK2vDBTnUAA6MCl46K+EMOLUS7uHs4MHhaYFYz/uKMvuzvjZ6AQwvJoDh4DICWG/T3Baypeb1jdB2s45/sfF4Px4o2FgQb9oE1unMuOuZg82hgIedFNwkm/PcvsK5C18dX1Fk7y1HwAKW+vOQ0y965vSRmd3pdRRV5hmLf9r8nnGoblSV3htcQ+OjX0Jp4xrKM7SEzvEc7o2aESAHfJ5phjJVSor8PXlHJNvJjOvC+ODDQfONgX5koECYgVmwoIoOttEdX8Sn86hL+TkL6kT8aUUAiQRVIsE2kW5pdxlaowteTi89tOaYi6ob8AmUN9rJtFb6lcF1opFHGHHmVDsTVHxRUP997LVJoHX8ncD6Ib6nLz+aCMPpaIAnyTCOoyiOaBJNkySeTtJsgpNRttMoQoUkME1h5wyoAtujmhp1n6PD+eNGatdBcwaqmoK3StpP60FiAgsL+hvUsE4D9wMlVUowLPcmygO8J/6Ye/yer+N3N1U+xN+lkj/sV9qZWmv9VveGkv8l+a+SfbYUm7JoMI0puZomcXI1yujkakbx+ArP0nEypIyMskteBX7+C/TqYjKrFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d6d41b7834bea1016c7c4b6feaad3fa"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
+        <action_type_parent display_value="Copy Attachment">95849c2a9353130079b5925cf67ffb91</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30fe6cdb0f973300dfd3694e68767e5a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:13:43</sys_created_on>
+        <sys_id>5d6d41b7834bea1016c7c4b6feaad3fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:13:43</sys_updated_on>
+        <ui_id>d52fc06f-9ca1-4a63-89b7-12867d118286</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/82V3WrjMBCFXyXo2glK7NpO7kpDYWG3hab0phQzlkaJQLG9stw2G/ruK9lO4iRNf6DLlkDAMxrpzBl99v2aSE4mRDCBIeMpFePI9ynlgvvhOMAwjsIIz4B4JIMl2pVgDLDFEjOTaGS55jb1CKpyufU6HtGIc4z7KY9ZP2Ah7Y9TQftxNKbhOASf4nBwU9e9vNhKLstCwequ3cBG2EIqrjEjk/sHjxSg7bEGNZmsD1If1a0gRWWXzvJKM+ydb/X3bjb632jNrAqX0ijQnsywDf1sN73pxG2B0zn0CD4bzDhagQJUiR5ZQsbB5HpFJkZXNqAR+HWmVtsVC5mZxoAlPJfyjz3UH3mdcyekXJXJTiLpJJPWRrvovLtATMHAzJ7ITKW3/uaSYdl4yFFApcxFN9YsuC6MzLOmxECqNtW5qpbZVeMX2W7QmV9VWjlYuP5dR217YrbIn7ZmXcqstqpNqpyB6ixF0GxxKVHVE5YKk3pAnhuQlmllnNQ1qeTt8XCa4GvjQYX1aJdQFDKbJ4XOH2Utw3a1HMyVfRgIlT9Z+aWcZwNgzoKBHRwMLm18WofvQEvnxy+7jS1+8dxcLhSU5c4VKyj5XbmeGo9aN5LGUFfCtCzMuT3gEdvGX7wWRXuX37jSId3dVwN6jq9i6I+GUThE0ec04P0gjmgfztwfxVQMIaajAL4Sww9o3mB4W4s+Yu+wl5Y7nrOqnprkB+RN20zvx3TH3uhfsXeCtv/BGIrAZyEPKNhfaqdKWRQJ+5b14wgE+ruK6dFUD+Bs/PgEmycA3J/SPoL7c/ouEDZ2v0OiCN681VH39rrtdgS6V7WTnJT1R+eYMHdperNN8pPfvPdl7WBrdB3IbOGqHzfv1i5bdVnvqkm0aPlfhVZMvy1aX/H5OoHIntf7hOy5LcukuZKt6HrXbwTOKWYe/gKltKqeSgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d6d41b7834bea1016c7c4b6feaad3fb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:39</sys_created_on>
+        <sys_id>60fc1d7b838bea1016c7c4b6feaad36d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 22:21:39</sys_updated_on>
+        <ui_id>9424ea48-25d6-4cc3-8e87-4a65e80674e2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K1GeNqmrkqaUtjxNVExIDCRAvACLbuKb1pLjZLZT6FD/+65jJ1SAGEi8oPXN5374nOt72l4/hJyF83CMLIpn8SRP4iQZRdFoOo6zSZLFI5YAYhwOQgklUqbCvFKMzmsQjQUme7PJbLafTJNphhBH1GQ/H2eTAgFYkkwplXFdC9hc+QpC8hUXTKEM59e3g7AGRc0NqnD+8CT0VnYCMhSUet7Re0rXbGp7ZlXelChNyjvwxFcufCQ4XlCEiiydOBqEeG9QMiQiBQiNg7AEycBUahPOjWoIUAjsTIpNn7Hi0jihJdxr/oduHkc2r0BSlvsh9MfUD8jBxQIMXFDn3DSqn1fFc9RuJgwLaIQ53MVcwllteCVdiYFMdNWVaEp56iYS9g123qPRRAJrq9Myd7KKi1V1d96RPOKyHYmXKKocRH8CYxTPGmPpPIQosJ1xCXXN5TKtVbXmbTFRKYdLQYdhIao7ulPzpRxCbnkPaaowPCJ80cJXoLgV8ZPaUPF2EOqNPhSg9aMUmmH6u7FMnDAvIW2n0I4gbTfBFueK1+Y7XbVGT3w78Puf7b22YfnscaF2ej56QOcrZI1AlloJKS/rSpnni3/RpQX2iYPjLu19bngD184Nl+0OvMzdG+IZdrJbG5y6gLfD3ofZYfqZ7OBlfHo//MsF0ejV79mdTWoXX+84ANqGN00UJcxuwS/VyFQbUMZhBfvmbkb23BfvK36fW96gqXPLEUfB9AsiO6tgSawNpk70E7v4YHDlg/0vyId5Jp5E7ecTOec/+CFxEh1mOfe7aw+vpdJ+qWDJTOCWPJB4F/ywiujZ8JKX+OXrwY2khCEwdkH/YyTTX5LIggrpRaUtPiCyGtbI+jfYbre3fwGOjeUY1wkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=60fc1d7b838bea1016c7c4b6feaad36d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:39</sys_created_on>
+        <sys_id>68fc1d7b838bea1016c7c4b6feaad36d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 22:21:39</sys_updated_on>
+        <ui_id>8104a1ee-7482-4d79-851c-b7d8174120fa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5XPVZU0JbS9IapKSCxIsOLComhiT6gl52NtB+ii/vcdJ04aFcSCxKXa3Dxffm/yXnL/yqRgSzZDEYSLMOZRGEXTIJjOZ2EaR2k4FREghmzMCsiRKjXyUgs6P4GqXSA+WcSLxWk0j+YpQhjQkFM+S+MMAUQUzalUSFMp2N75DorwjVRCY8GW9w9jVoGm4RY1W74epD6LTkGKikpvOniHcO22cmdR8jrHwiayC176zpXPjC5WlKEmBycMxgxfLBYCCUgGyuCY5VAIsKXesqXVNQU0grgu1Lav2MjCtkRzeDHyD908C1xdhsSM+yX0x8QvqA1nK7BwS5O5rXW/r1JyNO1OBGZQK3s+jLUF15WVZdG2WEhV112qOi+u2o2wfsDgfdSGQGDleDrkLa3sdlM+33Qg17JoVuIpqpKD6k9grZZpbR2cV4YKmx3nUFWyeEwqXT7Jppmg5JNHRYdJpspnutPIx2IC3OGe0FZhsqb4qgnfgZaOxA8aQ827MTNbc67AmD0V2mHyu3ZIWmKeQtJsoVlB0ijBNXMtK3tGVz2hB74be/2nJx8pjC/2ghrM3HvA8A2KWqFIHIVE5lWp7Vvh33ZlI/eKRxdd2dfc8AmsnRt+Nhp4H7s3xJvY5bB3dNUmvB1Ovs0O82Oyg6dx9H74lwuC6Yff2YGSGuGbgQOgGfirDoJINEPfqv+9kq8p/xP4OuWvJSph3gHcyR5zwmYxaQkcSN8nR3c+2f8Nvk3/YRw0zxG54H/5KXRBAr3bPfwFkVG32SIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=68fc1d7b838bea1016c7c4b6feaad36d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>730c8137834bea1016c7c4b6feaad32c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <ui_id>321761ef-d04d-4870-a570-a0ebf1a8024a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY227jNhD9FUJPLeC4ku/OW5vAQIB0A6zTxQLbBUGJlE2UJrUklWwS5Gv60A/ZH+tQpGzDdmwLdYAEfeTMkDwzc86I9peniNPoPKLjeJyPx/3RMI673TgeDLoZSdK0O8jSOCW9qBVJsmAQaUkqGCzviCjd2jwYTIkl2KhSZ85DuSkEefgUAi7Biaa1M5tzQTWT0fmXr62oIBpOtUxH508brmNhCZIyAaG3AdcGTPtQLJe48nnb9fo29ME7lKYOStyK2HfLJGWAISfCsFa0IBKyVPphadGM0BspVoY5lxZOjFzwd8Mf4d5R7OJyBlllzPuWSxzq5M25K9PU6jKzpQ6h2VzxjBlfD8pyUgp7sW7zATeF5Ur6LT5tv1uJciE/+HJEywPqtoClNACCFS5RhzykkU/n6v5jjXLCZVWT4BQqI2K5ItZqnpbW4XmKmGALOAgvSFFwOcOFVne82gxYFu2ZgEU7F+oeLjV8Jtskc8Dbjj3tCdgvK/MnornL4nc4BjYDIC6AIdi3MLDsPLrDmShN5dBEGn9W9NxyhLwQxJhV5lBy/K10uH0dQsbYF81tyTQv7K9wxB0LyT23amX091JwvKJcpiTlDoVZk4fz/VnCVnq1KJS25Mc/P/5WiDL0WzkziC3QtbIM/fT5evr5523xNN3eUF6Hc6vldbGe3K6Eg9C2bNe7DghCS04mtF4cvyepweVvT2nNteNLcEBACd1LMrrikwGCY1/LNQVti6Ixz4+AUPP8xjETpQ8voQo0zzkTdNf3ZOIcG9+Tzv/ze/ImSQ6AKPbd41JwWT0OAOhrsb+/l3ppssGzil5rjytnIybb1gBBVqHHxko4Ak6thCncjW49nh0Q63lfUWZz1tfGIIDuyQTQ7ZxGAE/LNJeF3FHz+j3oulnHP7p4shkPFFzbkDzvElijO5Omd3aetwXcbaTgdbJ5z+ULnDvxw/EFRbZecwTMYWu4D3v94ntOZ8yubq+jqLL3RPy1yx8Yh+tGVem9wiM02fs7KF17hPIcL6BzvIC3smYZkMNgohnOVSkpDq/kFZFcJ3OujQ3B24PmIwP9SKRAmMjOGaqi0TK64Yf4cB51Ka9yVCcSbjMIEkFVImiZSLO0mwyt3gkfp6ceWhPCRdUN+AFUrLWTaa30C4PrQCP3MOLIqXYkqOSkoP772NslgZ3j7wDWd/Fr+vSjKWMk7XXIYNhNkjhOYjqMR8NhMhqk+YAMe/lKoxgbmcE0hZNzoAocj2tq1H2Ot+ePH6lNB80RqGoKXirpfmF3hhY5WNBfVMM6DDwMlFQpwYjcmCi38J34ZRLwB77239xUeRf/LZX8drPS3rSz1q/1bij5H5J/K9mVo9iIxZ1RQrOz0TAZnvVyOjgbU9I/I+O0P+xSlvXyUz4Fvv4LGNg0NqsVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=730c8137834bea1016c7c4b6feaad32c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>7b0c8137834bea1016c7c4b6feaad32c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <ui_id>ca0295f3-b9b6-4f76-86ac-aafae3899288</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyl+zcigQGCnQboMn20i0IiqRiYmlSpaikjuH/vkORsgVbsS2sAyTYo2aG5JuZ90aUfqxDTsPrkM6iWTabjadJFA2HUTSZDAmO03Q4IWmU4lHYCyVeMog0OBUMHp+wKO1zsSoQNgaTxZJJAw7Ki1zg1Xfv/9T0kQUXVDMZXv/42QtzrGFPw3R4vd5znQtK4JQJCH3wqPZAmlW+fUSVz9m+NJcFX51DaWqhRL2Q/TZMUgYYMiwK1guXWFJslF5tLZpheifFzrDgkOF1GNrg3wV/gXOnkY3LGGRFmPNtH5EvkzNnt9jge6NLYkrtQ8lCccIKVw/KMlwKc9O0uYC73HAl3RKXtlutRLmUX105wu0GdVfAUhYAguU2UYvcp5HdL9TztxrlnMuqJt4pFMFi+wRd1zwtjcWzDplgtsloifOcy0eUa/XEq8WAZdl/FPDQz4R6hkML/ij7mFjgfagr7s/BfluZv2PNbRZ/wjawGABxAQxBroWFKnVVyidERFlUDo1l4fYKNz1LxxuBi2KXOZQc/SotblcHnzFyRbNLiOa5+QRbPDGf3KZX62J8lIKzHeWIkpRbFEVDHB41SITTv0vYgq7XN0AdwyiK+6TUUGXTd/7N5lA8ndd3FNjp7GqB3TTTa0vZS+3A9qVtAy+1+GJSG0XRRxIbHP7+tNZdPa4EJyQU06Mkozs+FUob5GrZ0NChKjrz/AwINc/vLDODdPUaKk/zjDNB294oc+vYe6MM/p9vlHdJcgBEkesel4LLasoC0Ldi//go9dJ4j2cVvRqXK2vDBTnUAA6MCl46K+EMOLUS7uHs4MHhaYFYz/uKMvuzvjZ6AQwvJoDh4DICWG/T3Baypeb1jdB2s45/sfF4Px4o2FgQb9oE1unMuOuZg82hgIedFNwkm/PcvsK5C18dX1Fk7y1HwAKW+vOQ0y965vSRmd3pdRRV5hmLf9r8nnGoblSV3htcQ+OjX0Jp4xrKM7SEzvEc7o2aESAHfJ5phjJVSor8PXlHJNvJjOvC+ODDQfONgX5koECYgVmwoIoOttEdX8Sn86hL+TkL6kT8aUUAiQRVIsE2kW5pdxlaowteTi89tOaYi6ob8AmUN9rJtFb6lcF1opFHGHHmVDsTVHxRUP997LVJoHX8ncD6Ib6nLz+aCMPpaIAnyTCOoyiOaBJNkySeTtJsgpNRttMoQoUkME1h5wyoAtujmhp1n6PD+eNGatdBcwaqmoK3StpP60FiAgsL+hvUsE4D9wMlVUowLPcmygO8J/6Ye/yer+N3N1U+xN+lkj/sV9qZWmv9VveGkv8l+a+SfbYUm7JoMI0puZomcXI1yujkakbx+ArP0nEypIyMskteBX7+C/TqYjKrFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7b0c8137834bea1016c7c4b6feaad32c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=330c8137834bea1016c7c4b6feaad313^sys_idNOT IN64fc1d7b838bea1016c7c4b6feaad36e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">faecd97b838bea1016c7c4b6feaad33c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Disparar Importação de Bugs em Lote">330c8137834bea1016c7c4b6feaad313</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:21:39</sys_created_on>
+        <sys_id>64fc1d7b838bea1016c7c4b6feaad36e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:29</sys_updated_on>
+        <ui_id>fe998cc1-6ccf-4a07-bfe5-912e40a620c4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Z227bOBD9FUHPXq/ujv1WJBugQHe7iI28FIVAUSObKC2pFJXUG+TfdyhRF9uyG7dO4QIBDCQcUsMzM+eMSPvJzEqZl7JYZO+Kgi1Tc/bp88hkqbLh/09mStZgzsy4FESyLA3lJgdzZD4QXio7fMs5o0yGzQKci1mRc7K510v+0kuM3hK6YjwWoLfLicBdJAhz9rQzxWL04E0nrn9lexPXcm3XsqLAhiDwJkGUBGRy5aNDTiLguPRG72EsapwH4Fd/ZrhXxmgz/qBdXDfGTMQKkm1ZI4xTQhoDokkIL2BkrkkaE5mJTWsRQOKPKe8MK5ZK9Geqxd8K9h/u6FlqXQIYH4V6rh2GOm+1ObkhksylKKkshV5aw63r0gQ8lN1jxdFBWc+jzscdcJx+gCEfQs8N+LD7Pv4FQSGVZDnoJW9nB/w4z1joGBJScnl9vhDtM4TonClEV4VYl+9jXk3NTFfxjkS8KW7Gy3X6T81Xs03I/TGh1Utuvq+3skBUkCsKK05qgibzVfZ41/DvlqUVVj3JM0p4OyJSChaVUpXmyQQOa3QUrkmes3QZ5iJ7YNXDGMZ6vOQ4GCc8e8RNVVcZE6qAjFExZHyL9pvKfE8EUwn4G93gw88js9gU15wURZcGlEf4tVRI6qToGMIqhdUjVLBcvqOqghquKpoWfq8qkq1BhFVrCxEIqHGvfvuN6+Q+FSV2HNiBHU3cwME+5Xo0oBBMAWybTB2r16d6XKpwGRUuQ+EyNLAXR6CbWZX1yh72Jpquhu0E/lzU9ldobJWvc3S2oVawr52TpPO78B9ZVIQ1nXVs1eavoouaSh23ziuEK8t1XWtKfXfSCiGOAZJkEtkO2INC6Cg/AE5zHIkHyypVfW6/b61vzH5jdkWegRe0PZ1Yf1g2fgzLmuHHs/ap7lnGHGiWxsXJpIfE9nx66JQawcApdZfyPdTbTX3b/mHfTXNeucCz6hvvfyHv986yYYZAVPF7SiCJrMDtcL8xn0b7mBLPtvwDtHeCHu0X1UlH7B7FjR7ElwdzyhXOvUBZdPeKJu+75Rm6qkWQZKL/tm4N7a3n+GXqO5vZJ23m/PS1pqXi4FWmmd0RO6b0ErXeIKSb8NjVsrdMc7gj4umNYfubjR/uEq9zIbITx48P9oaJe6Q37F+EXgD9R29C3gX2h1/y2vxJJQ2/3UZvCsO0rCAu+Zn1lES+j4fMA3oKnO0jJmbekCswkoxjStWoh+oQWp2wjsHb4rnr2bV4/DOKx3W2xUPXaR/ckJDm3fQFCOr0c2gyByLo6pYBVyWu6vK7fd/2WbG89t1mmrICISyU7X3zc4Ka2GCEjPZNj5n4osB3tuf/AQyAorWYGAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=330c8137834bea1016c7c4b6feaad313"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_330c8137834bea1016c7c4b6feaad313</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>770c8137834bea1016c7c4b6feaad31e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_330c8137834bea1016c7c4b6feaad313</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:52</sys_created_on>
+        <sys_id>bf0c8137834bea1016c7c4b6feaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 21:07:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_330c8137834bea1016c7c4b6feaad313"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_330c8137834bea1016c7c4b6feaad313"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>0e34cdb3830bea1016c7c4b6feaad330</sys_id>
+        <latest_snapshot>330c8137834bea1016c7c4b6feaad313</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch5-06-11-2025_06-25-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0e34cdb3830bea1016c7c4b6feaad330^sys_idNOT IN801c8137834bea1016c7c4b6feaad346"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"801c8137834bea1016c7c4b6feaad346","name":"plan","plan_signature":null}}</plan>
+        <plan_id>0e34cdb3830bea1016c7c4b6feaad330</plan_id>
+        <snapshot>1117edf783cbea1016c7c4b6feaad37f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:07:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>801c8137834bea1016c7c4b6feaad346</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 23:05:30</sys_updated_on>
+        <trigger display_value="">041c8137834bea1016c7c4b6feaad344</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0e34cdb3830bea1016c7c4b6feaad330"/>
+</record_update>
