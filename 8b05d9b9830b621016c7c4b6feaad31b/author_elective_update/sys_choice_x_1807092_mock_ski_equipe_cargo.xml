@@ -20,37 +20,18 @@
             <element>cargo</element>
             <hint/>
             <inactive>false</inactive>
-            <label>-- New choice --</label>
+            <label>Monitor</label>
             <language>en</language>
             <name>x_1807092_mock_ski_equipe</name>
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-30 17:34:48</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-30 20:30:57</sys_updated_on>
-            <value>-- New choice --</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>cargo</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Monitor</label>
-            <language>en</language>
-            <name>x_1807092_mock_ski_equipe</name>
-            <sequence>2</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-30 17:36:40</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-30 20:31:20</sys_updated_on>
+            <sys_updated_on>2025-08-06 15:09:07</sys_updated_on>
             <value>monitor</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -61,15 +42,15 @@
             <label>Estagiário</label>
             <language>en</language>
             <name>x_1807092_mock_ski_equipe</name>
-            <sequence>3</sequence>
+            <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-30 17:36:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-30 20:31:38</sys_updated_on>
+            <sys_updated_on>2025-08-06 15:09:09</sys_updated_on>
             <value>estagiario</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -80,15 +61,15 @@
             <label>Gestor</label>
             <language>en</language>
             <name>x_1807092_mock_ski_equipe</name>
-            <sequence>4</sequence>
+            <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-07-30 20:30:07</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-30 20:31:54</sys_updated_on>
+            <sys_updated_on>2025-08-06 15:09:11</sys_updated_on>
             <value>gestor</value>
         </sys_choice>
     </sys_choice>

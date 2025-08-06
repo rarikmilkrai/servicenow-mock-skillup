@@ -34,8 +34,8 @@
     // 1. Procura por todos os cursos que estão marcados como 'Ativo'.
     // A observação diz "status definido como Aberto", mas o status pertence ao progresso do aluno,
     // não ao curso em si. A lógica correta é associar a todos os cursos ATIVOS.
-    var grCurso = new GlideRecord('u_cursos');
-    grCurso.addQuery('u_ativo', true);
+    var grCurso = new GlideRecord('cursos');
+    grCurso.addQuery('ativo', true);
     grCurso.query();
 
     // 2. Para cada curso ativo encontrado, cria uma associação na tabela 'Progresso'.
@@ -47,9 +47,9 @@
         grProgresso.initialize();
 
         // 4. Preenche os campos da associação.
-        grProgresso.setValue('u_estagi_rio', current.getUniqueValue()); // Pega o ID do estagiário que acabou de ser criado.
-        grProgresso.setValue('u_curso', grCurso.getUniqueValue());      // Pega o ID do curso ativo encontrado no loop.
-        grProgresso.setValue('u_status', 'aberto');                     // Define o status inicial como 'Aberto'.
+        grProgresso.setValue('estagiario', current.getUniqueValue()); // Pega o ID do estagiário que acabou de ser criado.
+        grProgresso.setValue('curso', grCurso.getUniqueValue());      // Pega o ID do curso ativo encontrado no loop.
+        grProgresso.setValue('status', 'aberto');                     // Define o status inicial como 'Aberto'.
 
         // 5. Insere o novo registro de progresso no banco de dados.
         grProgresso.insert();
@@ -62,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6b2da31838f621016c7c4b6feaad363</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Associa Cursos a um estagiario novo</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sys_script_e6b2da31838f621016c7c4b6feaad363</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 21:13:06</sys_updated_on>
+        <sys_updated_on>2025-08-06 18:10:15</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

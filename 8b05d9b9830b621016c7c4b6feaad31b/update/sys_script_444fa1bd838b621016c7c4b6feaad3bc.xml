@@ -33,7 +33,7 @@
 
     // A condição do filtro 'Data de Desligamento changes' já garante que a regra só rode quando necessário.
     // Esta verificação adicional confirma que o campo não está vazio (foi preenchido).
-    if (!current.u_data_de_desligamento.nil()) {
+    if (!current.data_de_desligamento.nil()) {
         
         // Define o campo 'Ativo' (herdado da tabela User) como 'falso'.
         current.active = false;
@@ -49,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>444fa1bd838b621016c7c4b6feaad3bc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>EDX - Muda status ativo caso desligado</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
@@ -57,7 +57,7 @@
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sys_script_444fa1bd838b621016c7c4b6feaad3bc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-30 18:42:15</sys_updated_on>
+        <sys_updated_on>2025-08-06 17:54:39</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
