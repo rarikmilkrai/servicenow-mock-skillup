@@ -18,14 +18,14 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_1807092_mock_ski.tarefa_do_projeto_user</roles>
+        <roles>x_1807092_mock_ski.tarefa_do_projeto_user,x_1807092_mock_ski.edx_monitor,x_1807092_mock_ski.edx_estagiario,x_1807092_mock_ski.edx_gerente</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-31 13:30:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>be73f50a83cfa21016c7c4b6feaad340</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Tarefa do Projetos</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sys_app_module_be73f50a83cfa21016c7c4b6feaad340</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-31 13:30:44</sys_updated_on>
+        <sys_updated_on>2025-08-21 20:35:38</sys_updated_on>
         <timeline_page/>
         <title>Tarefa do Projetos</title>
         <uncancelable>false</uncancelable>
