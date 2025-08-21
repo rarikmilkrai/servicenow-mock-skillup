@@ -18,14 +18,14 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_1807092_mock_ski.contato_user</roles>
+        <roles>x_1807092_mock_ski.contato_user,x_1807092_mock_ski.edx_estagiario,x_1807092_mock_ski.edx_gerente,x_1807092_mock_ski.edx_monitor</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-31 14:49:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6165c6428343e21016c7c4b6feaad370</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Contatos</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sys_app_module_6165c6428343e21016c7c4b6feaad370</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-31 14:49:02</sys_updated_on>
+        <sys_updated_on>2025-08-21 21:16:50</sys_updated_on>
         <timeline_page/>
         <title>Contatos</title>
         <uncancelable>false</uncancelable>
