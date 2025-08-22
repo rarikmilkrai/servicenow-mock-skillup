@@ -8,7 +8,7 @@
         </condition>
         <controlled_by_refs/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow create for dependencias in x_1807092_mock_ski_tarefa_do_projeto, for users with role x_1807092_mock_ski.edx_estagiario, and if the ACL condition (assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ) evaluates to true.</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1807092_mock_ski_tarefa_do_projeto.dependencias</name>
         <operation display_value="create">create</operation>
@@ -18,14 +18,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-21 20:05:47</sys_created_on>
         <sys_id>f4d6df7083e3669016c7c4b6feaad349</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_1807092_mock_ski_tarefa_do_projeto.dependencias</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1807092_mock_ski">8b05d9b9830b621016c7c4b6feaad31b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">8b05d9b9830b621016c7c4b6feaad31b</sys_scope>
         <sys_update_name>sys_security_acl_f4d6df7083e3669016c7c4b6feaad349</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-21 20:05:47</sys_updated_on>
+        <sys_updated_on>2025-08-22 12:49:59</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
